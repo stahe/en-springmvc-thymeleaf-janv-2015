@@ -424,6 +424,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#222-a-dynamic-thymeleaf-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2. A dynamic Thymeleaf page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#223-configuring-the-spring-boot-application" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -478,6 +489,28 @@
     <span class="md-ellipsis">
       
         2.4.2. The TCP/IP Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-the-http-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3. The HTTP Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4. Conclusion
       
     </span>
   </a>
@@ -1123,13 +1156,10 @@
 
 <ul>
   <li>In [5], the browser received the HTML page we had built. It interpreted it and rendered it as a graphical display.
-<a id="refheading57972676630786"></a>
-
-### 2.2.2. <span style="color: #4f81bd">A dynamic Thymeleaf page</span>
-
   </li>
 </ul>
-
+<p><a id="refheading57972676630786"></a></p>
+<h3 id="222-a-dynamic-thymeleaf-page">2.2.2. <span style="color: #4f81bd">A dynamic Thymeleaf page</span></h3>
 <p>Now let’s create a Thymeleaf page. It’s a standard HTML page with tags enriched with [Thymeleaf] attributes [<a href="http://www.thymeleaf.org/"><u><span style="color: #0563c1">http://www.thymeleaf.org/</span></u></a>]. We follow a process similar to that of creating the HTML page, but this time the new HTML page must be placed in the [templates] folder:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D90000007E6AB9A9EB.png" style="display:inline-block; margin:4px;width:4.02cm;height:2.334cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D90000007E6AB9A9EB.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -1404,13 +1434,10 @@
   <li>The client knows from the server’s HTTP headers that it will receive an HTML document. It will parse this document and may notice that it contains image references. These images are not included in the HTML document. It therefore makes a new request to the same web server to request the first image it needs. This request is identical to the one made in step 1, except that the requested resource is different. The server will process this request by sending the requested image to the client. This time, in its response, the HTTP headers will specify that the document sent is an image and not an HTML document.
   </li>
   <li>The client retrieves the sent image. Steps 3 and 4 will be repeated until the client (usually a browser) has all the documents needed to display the entire page.
-<a id="refheading57984676630786"></a>
-
-### 2.4.3. <span style="color: #4f81bd">The HTTP Protocol</span>
-
   </li>
 </ol>
-
+<p><a id="refheading57984676630786"></a></p>
+<h3 id="243-the-http-protocol">2.4.3. <span style="color: #4f81bd">The HTTP Protocol</span></h3>
 <p>Let’s explore the HTTP protocol through examples. What do a browser and a web server exchange?</p>
 <p>The web service or HTTP service is a TCP/IP service that typically operates on port 80. It could operate on a different port. In that case, the client browser would have to specify that port in the URL it requests. A URL generally has the following form:</p>
 <p><strong>protocol://machine[:port]/path/info</strong></p>
@@ -1533,13 +1560,10 @@
   <li>line 5: the size in bytes of the HTML document sent.
   </li>
   <li>line 6: date and time of the response;
-<a id="refheading57986676630786"></a>
-
-### 2.4.4. <span style="color: #4f81bd">Conclusion</span>
-
   </li>
 </ul>
-
+<p><a id="refheading57986676630786"></a></p>
+<h3 id="244-conclusion">2.4.4. <span style="color: #4f81bd">Conclusion</span></h3>
 <p>We have explored the structure of a web client’s request and the server’s response to it using a few examples. The communication takes place via the HTTP protocol, a set of text-based commands exchanged between the two parties. The client’s request and the server’s response follow the same structure:</p>
 <p><img src="images/1000000000000150000000DCA46D122B.png" style="width:6.219cm;height:4.073cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000150000000DCA46D122B.png" /></p>
 <p>The two common commands for requesting a resource are GET and POST. The GET command is not accompanied by a document. The POST command, on the other hand, is accompanied by a document that is most often a string of characters containing all the values entered in a form. The HEAD command allows you to request only the HTTP headers and is not accompanied by a document.</p>
