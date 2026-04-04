@@ -887,10 +887,10 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.bind.annotation.RestController;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@RestController</span></span>
+<span class="odt-code-line">@RestController</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ActionModelController {</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -907,7 +907,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m01&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m01(String name</span><span style="color:#6a3e3e">, String age</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Hello [%s-%s]!, Greetings from Spring Boot!&quot;</span><span style="color:#000000">, name, </span><span style="color:#6a3e3e">age</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -934,7 +934,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m02&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m02(String </span><span style="color:#6a3e3e">name</span><span style="color:#000000">, String </span><span style="color:#6a3e3e">age</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Hello [%s-%s]!, Greetings from Spring Boot!&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">name</span><span style="color:#000000">, </span><span style="color:#6a3e3e">age</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -964,7 +964,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m03&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m03(String </span><span style="color:#6a3e3e">name</span><span style="color:#000000">[]) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Hello [%s]!, Greetings from Spring Boot!&quot;</span><span style="color:#000000">, String.</span><span style="font-style:italic;color:#000000">join</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;-&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">names</span><span style="color:#000000">));</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -994,7 +994,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m04&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person m04(Person </span><span style="color:#6a3e3e">person</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">person</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1011,10 +1011,10 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">name</span><span style="color:#000000">;</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// age</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#0000c0">age</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">....</span></span>
+<span class="odt-code-line">....</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
-<span class="odt-code-line"><span style="color:#000000">...</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1055,7 +1055,7 @@
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;a&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">a</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;b&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">b</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1084,7 +1084,7 @@
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;b&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">b</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;c&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">c</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1115,9 +1115,9 @@
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">while </span><span style="color:#000000">(</span><span style="color:#6a3e3e">headerNames</span><span style="color:#000000">.hasMoreElements()) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">            String </span><span style="color:#6a3e3e">name </span><span style="color:#000000">= </span><span style="color:#6a3e3e">headerNames</span><span style="color:#000000">.nextElement();</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.append(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;%s : %s\n&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">name</span><span style="color:#000000">, </span><span style="color:#6a3e3e">request</span><span style="color:#000000">.getHeader(</span><span style="color:#6a3e3e">name</span><span style="color:#000000">)));</span></span>
-<span class="odt-code-line"><span style="color:#000000">        }</span></span>
+<span class="odt-code-line">        }</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1150,7 +1150,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m08&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">m08(Writer </span><span style="color:#6a3e3e">writer</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">IOException {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">writer</span><span style="color:#000000">.write(</span><span style="color:#2a00ff">&quot;Hello, world!&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1180,7 +1180,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m09&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m09(</span><span style="color:#646464">@RequestHeader</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;User-Agent&quot;</span><span style="color:#000000">) String </span><span style="color:#6a3e3e">userAgent</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">userAgent</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1221,7 +1221,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m10&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">m10(HttpServletResponse </span><span style="color:#6a3e3e">response</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addCookie(</span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Cookie(</span><span style="color:#2a00ff">&quot;cookie1&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;remember me&quot;</span><span style="color:#000000">));</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1251,7 +1251,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m11&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m10(</span><span style="color:#646464">@CookieValue</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;cookie1&quot;</span><span style="color:#000000">) String </span><span style="color:#6a3e3e">cookie1</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">cookie1</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1279,7 +1279,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m12&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m12(</span><span style="color:#646464">@RequestBody </span><span style="color:#000000">String </span><span style="color:#6a3e3e">requestBody</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">requestBody</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1329,7 +1329,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m13&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">, consumes = </span><span style="color:#2a00ff">&quot;application/json&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m13(</span><span style="color:#646464">@RequestBody </span><span style="color:#000000">Person </span><span style="color:#6a3e3e">person</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">person</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1360,7 +1360,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m14(</span><span style="color:#646464">@RequestBody </span><span style="color:#000000">String </span><span style="color:#6a3e3e">requestBody</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">JsonParseException, JsonMappingException, IOException {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        Person </span><span style="color:#6a3e3e">person </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">ObjectMapper().readValue(</span><span style="color:#6a3e3e">requestBody</span><span style="color:#000000">, Person.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">person</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1412,12 +1412,12 @@
 <span class="odt-code-line"><span style="color:#000000">        Object </span><span style="color:#6a3e3e">objCounter </span><span style="color:#000000">= </span><span style="color:#6a3e3e">session</span><span style="color:#000000">.getAttribute(</span><span style="color:#2a00ff">&quot;counter&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f7f5f">// convert it to an integer to increment it</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#6a3e3e">iCounter </span><span style="color:#000000">= </span><span style="color:#6a3e3e">objCounter </span><span style="color:#000000">== </span><span style="font-weight:bold;color:#7f0055">null </span><span style="color:#000000">? 0 : (Integer) </span><span style="color:#6a3e3e">objCounter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        iCounter++;</span></span>
+<span class="odt-code-line">        iCounter++;</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f7f5f">// Put it back into the session</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">session</span><span style="color:#000000">.setAttribute(</span><span style="color:#2a00ff">&quot;counter&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">iCounter</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f7f5f">// return it as the result of the action</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">valueOf</span><span style="color:#000000">(</span><span style="color:#6a3e3e">iCounter</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p><span style="color: #000000">Spring MVC maintains the user&#x27;s session in an object of type [HttpSession].</span></p>
@@ -1486,13 +1486,13 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">getCounter() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#0000c0">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">setCounter(</span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">counter </span><span style="color:#000000">= </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1513,15 +1513,15 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.context.annotation.ComponentScan;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.context.annotation.Configuration;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Configuration</span></span>
+<span class="odt-code-line">@Configuration</span>
 <span class="odt-code-line"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">({</span><span style="color:#2a00ff">&quot;istia.st.springmvc.controllers&quot;</span><span style="color:#000000">})</span></span>
-<span class="odt-code-line"><span style="color:#000000">@EnableAutoConfiguration</span></span>
+<span class="odt-code-line">@EnableAutoConfiguration</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Application {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public static void </span><span style="color:#000000">main(String[] </span><span style="color:#6a3e3e">args</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        SpringApplication.</span><span style="font-style:italic;color:#000000">run</span><span style="color:#000000">(Application.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">, </span><span style="color:#6a3e3e">args</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1538,13 +1538,13 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Autowired</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">SessionModel </span><span style="color:#0000c0">session</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ------ manage a session scope object [Autowired] -----------</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m16&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m16() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000c0">session</span><span style="color:#000000">.setCounter(</span><span style="color:#0000c0">session</span><span style="color:#000000">.getCounter() + 1);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">valueOf</span><span style="color:#000000">(</span><span style="color:#0000c0">session</span><span style="color:#000000">.getCounter());</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1584,7 +1584,7 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.stereotype.Component;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Component</span></span>
+<span class="odt-code-line">@Component</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ApplicationModel {</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// counter</span></span>
@@ -1593,13 +1593,13 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">AtomicLong getCounter() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#0000c0">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">setCounter(AtomicLong </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">counter </span><span style="color:#000000">= </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1611,14 +1611,14 @@
 
 <p><span style="color: #000000">We create the following new action [/m17]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#646464">@Autowired</span></span>
+<span class="odt-code-line">@Autowired</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">ApplicationModel </span><span style="color:#0000c0">application</span><span style="color:#000000">;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----- manage an application-scoped object [Autowired] ------------------------</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m17&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m17() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">valueOf</span><span style="color:#000000">(</span><span style="color:#0000c0">application</span><span style="color:#000000">.getCounter().incrementAndGet());</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 </code></pre></div>
 
 <ul>
@@ -1645,12 +1645,12 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// the getters and setters</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public int </span><span style="color:#000000">getCounter() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#0000c0">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">setCounter(</span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">counter </span><span style="color:#000000">= </span><span style="color:#6a3e3e">counter</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>We will use this object with the following two actions:</p>
@@ -1660,7 +1660,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">void m18(HttpSession </span><span style="color:#6a3e3e">session</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f7f5f">// Here we set the [container] key in the session</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">session</span><span style="color:#000000">.setAttribute(</span><span style="color:#2a00ff">&quot;container&quot;</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Container());</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Using [@ModelAttribute] ----------------------</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// The [container] key from the session will be injected here</span></span>
@@ -1668,7 +1668,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m19(</span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;container&quot;</span><span style="color:#000000">) Container </span><span style="color:#6a3e3e">container</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">container</span><span style="color:#000000">.setCounter(1 + </span><span style="color:#6a3e3e">container</span><span style="color:#000000">.getCounter());</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">valueOf</span><span style="color:#000000">(</span><span style="color:#6a3e3e">container</span><span style="color:#000000">.getCounter());</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 </code></pre></div>
 
 <ul>
@@ -1679,7 +1679,7 @@
 </ul>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#000000">@RestController</span></span>
+<span class="odt-code-line">@RestController</span>
 <span class="odt-code-line"><span style="color:#646464">@SessionAttributes</span><span style="color:#000000">({</span><span style="color:#2a00ff">&quot;container&quot;</span><span style="color:#000000">})</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ActionModelController {</span></span>
 </code></pre></div>
@@ -1710,7 +1710,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;p&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person getPerson() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return new </span><span style="color:#000000">Person(7, </span><span style="color:#2a00ff">&quot;abcd&quot;</span><span style="color:#000000">, 14);</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ---------------instantiation of @ModelAttribute --------------------------</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// will be injected if it is in the session</span></span>
@@ -1719,12 +1719,12 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// otherwise, it is constructed using the default constructor</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// then the model attributes are initialized with the GET or POST parameters</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// the final result will be part of the model produced by the action</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// the p attribute is injected into the arguments------------------------</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m20&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person m20(</span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;p&quot;</span><span style="color:#000000">) Person </span><span style="color:#6a3e3e">person</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">person</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1745,7 +1745,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m21&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m21(Model </span><span style="color:#6a3e3e">model</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>An action that wants to display a view V must construct its model M. Spring MVC manages this using a [Model] type that can be injected into the action’s parameters. Initially, this model is empty or contains information tagged with the [@ModelAttribute] annotation. The action may or may not enrich this model before passing it to a view.</p>
@@ -1764,7 +1764,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;p&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person getPerson() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return new </span><span style="color:#000000">Person(7, </span><span style="color:#2a00ff">&quot;abcd&quot;</span><span style="color:#000000">, 14);</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>have created an entry [p, Person(7, &quot;abcd&quot;, 14)] in the model. This is always the case.</p>
@@ -1780,7 +1780,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m22&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m22(</span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;param1&quot;</span><span style="color:#000000">) String </span><span style="color:#6a3e3e">p1</span><span style="color:#000000">, Model </span><span style="color:#6a3e3e">model</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1801,7 +1801,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m23(String </span><span style="color:#6a3e3e">p2</span><span style="color:#000000">, Model </span><span style="color:#6a3e3e">model</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.addAttribute(</span><span style="color:#2a00ff">&quot;param2&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">p2</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1818,7 +1818,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m23b&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m23b(</span><span style="color:#646464">@ModelAttribute</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;unePersonne&quot;</span><span style="color:#000000">) Personne </span><span style="color:#6a3e3e">p1</span><span style="color:#000000">, Model </span><span style="color:#6a3e3e">model</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p><span style="color: #000000">The action does not modify the model provided to it. The result is as follows:</span></p>
@@ -1832,7 +1832,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m23c&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m23c(Person </span><span style="color:#6a3e3e">p1</span><span style="color:#000000">, Model </span><span style="color:#6a3e3e">model</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">model</span><span style="color:#000000">.toString();</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1863,8 +1863,8 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Double </span><span style="color:#0000c0">b</span><span style="color:#000000">;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
-<span class="odt-code-line"><span style="color:#3f7f5f">...</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">    }</span>
 </code></pre></div>
 
 <ul>
@@ -1885,7 +1885,7 @@
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">for </span><span style="color:#000000">(FieldError </span><span style="color:#6a3e3e">error </span><span style="color:#000000">: </span><span style="color:#6a3e3e">result</span><span style="color:#000000">.getFieldErrors()) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.append(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;[%s:%s:%s:%s:%s]&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getField(), </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getRejectedValue(),</span></span>
 <span class="odt-code-line"><span style="color:#000000">                        String.</span><span style="font-style:italic;color:#000000">join</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot; - &quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getCodes()), </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getCode(), </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getDefaultMessage()));</span></span>
-<span class="odt-code-line"><span style="color:#000000">            }</span></span>
+<span class="odt-code-line">            }</span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;errors&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.toString());</span></span>
 <span class="odt-code-line"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">else </span><span style="color:#000000">{</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#3f7f5f">// no errors</span></span>
@@ -1893,9 +1893,9 @@
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;a&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">.getA());</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;b&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">.getB());</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;data&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        }</span></span>
+<span class="odt-code-line">        }</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -1979,16 +1979,14 @@
 
 <p><span style="color: #000000">The [messages.properties] file above will be as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">NotNull=The field cannot be empty</span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.model01.</span><span style="color:#2a00ff">a=The [a] parameter must be an integer</span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Each line has the following format:</span></p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#000000">    key=message</span></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    key=message
 </code></pre></div>
-
 <p><span style="color: #000000">Here, the key will be an error code and the message will be the error message associated with that code.</span></p>
 <p><span style="color: #000000">Let’s review the error codes for the two fields:</span></p>
 <ul>
@@ -2025,8 +2023,8 @@
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public static void </span><span style="color:#000000">main(String[] </span><span style="color:#6a3e3e">args</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        SpringApplication.</span><span style="font-style:italic;color:#000000">run</span><span style="color:#000000">(Config.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">, </span><span style="color:#6a3e3e">args</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -2046,17 +2044,17 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.context.support.ResourceBundleMessageSource;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Configuration</span></span>
+<span class="odt-code-line">@Configuration</span>
 <span class="odt-code-line"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">({ </span><span style="color:#2a00ff">&quot;istia.st.springmvc.controllers&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;istia.st.springmvc.models&quot; </span><span style="color:#000000">})</span></span>
-<span class="odt-code-line"><span style="color:#000000">@EnableAutoConfiguration</span></span>
+<span class="odt-code-line">@EnableAutoConfiguration</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Config </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">WebMvcConfigurerAdapter {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Bean</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">MessageSource messageSource() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        ResourceBundleMessageSource </span><span style="color:#6a3e3e">messageSource </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">ResourceBundleMessageSource();</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">messageSource</span><span style="color:#000000">.setBasename(</span><span style="color:#2a00ff">&quot;i18n/messages&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">messageSource</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -2083,7 +2081,7 @@
 
 <p><span style="color: #000000">To use this file, we create the following new action:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#3f7f5f">// Form validation, error message handling ------------------------</span></span>
+<span class="odt-code-line">// Form validation, error message handling ------------------------</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m25&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Map&lt;String, Object&gt; m25(</span><span style="color:#646464">@Valid </span><span style="color:#000000">ActionModel01 </span><span style="color:#6a3e3e">data</span><span style="color:#000000">, BindingResult </span><span style="color:#6a3e3e">result</span><span style="color:#000000">, HttpServletRequest </span><span style="color:#6a3e3e">request</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">Exception {</span></span>
@@ -2111,17 +2109,17 @@
 <span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#6a3e3e">msg </span><span style="color:#000000">= </span><span style="color:#6a3e3e">ctx</span><span style="color:#000000">.getMessage(</span><span style="color:#6a3e3e">codes</span><span style="color:#000000">[</span><span style="color:#6a3e3e">i</span><span style="color:#000000">], </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">, </span><span style="color:#6a3e3e">locale</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    } </span><span style="font-weight:bold;color:#7f0055">catch </span><span style="color:#000000">(Exception </span><span style="color:#6a3e3e">e</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">                    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">                    i++;</span></span>
-<span class="odt-code-line"><span style="color:#000000">                }</span></span>
+<span class="odt-code-line">                    }</span>
+<span class="odt-code-line">                    i++;</span>
+<span class="odt-code-line">                }</span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#3f7f5f">// Did we find it?</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="font-weight:bold;color:#7f0055">if </span><span style="color:#000000">(</span><span style="color:#6a3e3e">msg </span><span style="color:#000000">== </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="font-weight:bold;color:#7f0055">throw new </span><span style="color:#000000">Exception(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Please enter a message for one of the codes [%s]&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">listCodes</span><span style="color:#000000">));</span></span>
-<span class="odt-code-line"><span style="color:#000000">                }</span></span>
+<span class="odt-code-line">                }</span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#3f7f5f">// Found - add the error message to the error message string</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.append(String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;[%s:%s:%s:%s]&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">locale</span><span style="color:#000000">.toString(), </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getField(), </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getRejectedValue(),</span></span>
 <span class="odt-code-line"><span style="color:#000000">                        String.</span><span style="font-style:italic;color:#000000">join</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot; - &quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">msg</span><span style="color:#000000">)));</span></span>
-<span class="odt-code-line"><span style="color:#000000">            }</span></span>
+<span class="odt-code-line">            }</span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;errors&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">buffer</span><span style="color:#000000">.toString());</span></span>
 <span class="odt-code-line"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">else </span><span style="color:#000000">{</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#3f7f5f">// ok</span></span>
@@ -2129,9 +2127,9 @@
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;a&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">.getA());</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;b&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">.getB());</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;data&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">mapData</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        }</span></span>
+<span class="odt-code-line">        }</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 </code></pre></div>
 
 <p><span style="color: #000000">This code is similar to that of the [/m24] action. Here are the differences:</span></p>
@@ -2173,10 +2171,8 @@
   </li>
 </ul>
 
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>NotNull=The field cannot be empty
 </code></pre></div>
-
 <p><span style="color: #000000">Another example:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028B0000008719E44712.png" style="display:inline-block; margin:4px;width:12.051cm;height:2.499cm;" class="odt-zoomable" data-zoom-src="images/100000000000028B0000008719E44712.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -2195,13 +2191,11 @@
   </li>
 </ul>
 
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>typeMismatch=Invalid format
 </code></pre></div>
-
 <p><span style="color: #000000">Why are there two different messages? For parameter [a], there were two possible messages:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.actionModel01.</span><span style="color:#2a00ff">a=Parameter [a] must be an integer</span></span>
 </code></pre></div>
 
@@ -2225,28 +2219,28 @@
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.servlet.i18n.CookieLocaleResolver;</span></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.servlet.i18n.LocaleChangeInterceptor;</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">@Configuration</span></span>
+<span class="odt-code-line">@Configuration</span>
 <span class="odt-code-line"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">({ </span><span style="color:#2a00ff">&quot;istia.st.springmvc.controllers&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;istia.st.springmvc.models&quot; </span><span style="color:#000000">})</span></span>
-<span class="odt-code-line"><span style="color:#000000">@EnableAutoConfiguration</span></span>
+<span class="odt-code-line">@EnableAutoConfiguration</span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Config </span><span style="font-weight:bold;color:#7f0055">extends </span><span style="color:#000000">WebMvcConfigurerAdapter {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Bean</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">MessageSource messageSource() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        ResourceBundleMessageSource </span><span style="color:#6a3e3e">messageSource </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">ResourceBundleMessageSource();</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">messageSource</span><span style="color:#000000">.setBasename(</span><span style="color:#2a00ff">&quot;i18n/messages&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">messageSource</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Bean</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">LocaleChangeInterceptor localeChangeInterceptor() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        LocaleChangeInterceptor </span><span style="color:#6a3e3e">localeChangeInterceptor </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">LocaleChangeInterceptor();</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">localeChangeInterceptor</span><span style="color:#000000">.setParamName(</span><span style="color:#2a00ff">&quot;lang&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">localeChangeInterceptor</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">addInterceptors(InterceptorRegistry </span><span style="color:#6a3e3e">registry</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">registry</span><span style="color:#000000">.addInterceptor(localeChangeInterceptor());</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Bean</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">CookieLocaleResolver localeResolver() {</span></span>
@@ -2254,8 +2248,8 @@
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">localeResolver</span><span style="color:#000000">.setCookieName(</span><span style="color:#2a00ff">&quot;lang&quot;</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">localeResolver</span><span style="color:#000000">.setDefaultLocale(</span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Locale(</span><span style="color:#2a00ff">&quot;fr&quot;</span><span style="color:#000000">));</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">localeResolver</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <ul>
@@ -2282,15 +2276,15 @@
 
 <p><span style="color: #000000">The [messages_fr.properties] file is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">NotNull=The field cannot be empty</span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.actionModel01.</span><span style="color:#2a00ff">a=The [a] parameter must be an integer</span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">The [messages_en.properties] file is as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">NotNull=The field cannot be empty</span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.actionModel01.</span><span style="color:#2a00ff">a=Parameter [a] must be an integer</span></span>
 </code></pre></div>
 
@@ -2302,19 +2296,26 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028700000084796BC864.png" style="display:inline-block; margin:4px;width:11.98cm;height:2.445cm;" class="odt-zoomable" data-zoom-src="images/100000000000028700000084796BC864.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">The browser sent the following HTTP headers:</span></p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span style="color:#000000">GET /m25 HTTP/1.1</span></span>
-<span class="odt-code-line"><span style="color:#000000">Host: localhost:8080</span></span>
-<span class="odt-code-line"><span style="color:#000000">Connection: keep-alive</span></span>
-<span class="odt-code-line"><span style="color:#000000">Pragma: no-cache</span></span>
-<span class="odt-code-line"><span style="color:#000000">Cache-Control: no-cache</span></span>
-<span class="odt-code-line"><span style="color:#000000">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</span></span>
-<span class="odt-code-line"><span style="color:#000000">User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36</span></span>
-<span class="odt-code-line"><span style="color:#000000">Referer: http://localhost:8080/m25</span></span>
-<span class="odt-code-line"><span style="color:#000000">Accept-Encoding: gzip, deflate, sdch</span></span>
-<span class="odt-code-line"><span style="color:#000000">Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4</span></span>
-</code></pre></div>
-
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">GET</span> <span class="o">/</span><span class="n">m25</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">Host</span><span class="p">:</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="n">Pragma</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">Cache</span><span class="o">-</span><span class="n">Control</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">image</span><span class="o">/</span><span class="n">webp</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Windows</span> <span class="n">NT</span> <span class="mf">6.3</span><span class="p">;</span> <span class="n">WOW64</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.36</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">39.0.2171.71</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.36</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="n">Referer</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span><span class="o">/</span><span class="n">m25</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">gzip</span><span class="p">,</span> <span class="n">deflate</span><span class="p">,</span> <span class="n">sdch</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">fr</span><span class="o">-</span><span class="n">FR</span><span class="p">,</span><span class="n">fr</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.4</span>
+</code></pre></div></td></tr></table></div>
 <p>We can see that in these headers, there is no [lang] cookie. In this case, our code uses the [fr] locale. This is shown in the screenshot. Let’s try another case:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A6000000EBC3DCB4C3.png" style="display:inline-block; margin:4px;width:12.356cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A6000000EBC3DCB4C3.png" /></td></tr></table>
 
@@ -2343,10 +2344,10 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m25&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Map&lt;String, Object&gt; m25(</span><span style="color:#646464">@Valid </span><span style="color:#000000">ActionModel01 </span><span style="color:#6a3e3e">data</span><span style="color:#000000">, BindingResult </span><span style="color:#6a3e3e">result</span><span style="color:#000000">, HttpServletRequest </span><span style="background-color:#ff950e;color:#6a3e3e">request</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">Exception {</span></span>
-<span class="odt-code-line"><span style="color:#000000">...</span></span>
+<span class="odt-code-line">...</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f7f5f">// locale</span></span>
 <span class="odt-code-line"><span style="color:#000000">        Locale </span><span style="color:#6a3e3e">locale </span><span style="color:#000000">= RequestContextUtils.</span><span style="font-style:italic;color:#000000">getLocale</span><span style="color:#000000">(</span><span style="background-color:#ff950e;color:#6a3e3e">request</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#3f7f5f">// any errors?</span></span>
+<span class="odt-code-line">// any errors?</span>
 </code></pre></div>
 
 <p>The locale can be directly injected into the action parameters. Here is an example:</p>
@@ -2354,7 +2355,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m26&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String m26(Locale </span><span style="color:#6a3e3e">locale</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;locale=%s&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">locale</span><span style="color:#000000">.toString());</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000017A000000761F0BF5A4.png" style="display:inline-block; margin:4px;width:7.001cm;height:2.185cm;" class="odt-zoomable" data-zoom-src="images/100000000000017A000000761F0BF5A4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001820000007563881BAD.png" style="display:inline-block; margin:4px;width:7.151cm;height:2.168cm;" class="odt-zoomable" data-zoom-src="images/10000000000001820000007563881BAD.png" /></td></tr></table>
@@ -2376,13 +2377,13 @@
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#7f0055">for </span><span style="color:#000000">(FieldError </span><span style="color:#6a3e3e">error </span><span style="color:#000000">: </span><span style="color:#6a3e3e">result</span><span style="color:#000000">.getFieldErrors()) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getField(),</span></span>
 <span class="odt-code-line"><span style="color:#000000">                        String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;[message=%s, codes=%s]&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getDefaultMessage(), String.</span><span style="font-style:italic;color:#000000">join</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;|&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getCodes())));</span></span>
-<span class="odt-code-line"><span style="color:#000000">            }</span></span>
+<span class="odt-code-line">            }</span>
 <span class="odt-code-line"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">else </span><span style="color:#000000">{</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#3f7f5f">// no errors</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;data&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        }</span></span>
+<span class="odt-code-line">        }</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>Here we have code we&#x27;ve seen several times now:</p>
@@ -2430,58 +2431,58 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@AssertFalse</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;Only the value [false] is accepted&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Boolean </span><span style="color:#0000c0">assertFalse</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@AssertTrue</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;Only the value [true] is accepted&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Boolean </span><span style="color:#0000c0">assertTrue</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Future</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;The date must be after today&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date </span><span style="color:#0000c0">dateInFuture</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Past</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;The date must be earlier than today&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date </span><span style="color:#0000c0">dateInPast</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Max</span><span style="color:#000000">(value = 100, message = </span><span style="color:#2a00ff">&quot;Maximum 100&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">intMax100</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Min</span><span style="color:#000000">(value = 10, message = </span><span style="color:#2a00ff">&quot;Minimum 10&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">intMin10</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotBlank</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;The string must not be empty&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">strNotBlank</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Size</span><span style="color:#000000">(min = 4, max = 6, message = </span><span style="color:#2a00ff">&quot;The string must be between 4 and 6 characters&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">strBetween4and6</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Pattern</span><span style="color:#000000">(regexp = </span><span style="color:#2a00ff">&quot;^\\d{2}:\\d{2}:\\d{2}$&quot;</span><span style="color:#000000">, message = </span><span style="color:#2a00ff">&quot;The format must be hh:mm:ss&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">hhmmss</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Email</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;Invalid address&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">email</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Length</span><span style="color:#000000">(max = 4, min = 4, message = </span><span style="color:#2a00ff">&quot;The string must be exactly 4 characters long&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">str4</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Range</span><span style="color:#000000">(min = 10, max = 14, message = </span><span style="color:#2a00ff">&quot;The value must be in the range [10,14]&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;This field is required&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">int1014</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@URL</span><span style="color:#000000">(message = </span><span style="color:#2a00ff">&quot;Invalid URL&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">url</span><span style="color:#000000">;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">...</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>The class uses validation constraints from two packages:</p>
@@ -2568,57 +2569,57 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@AssertFalse</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Boolean </span><span style="color:#0000c0">assertFalse</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@AssertTrue</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Boolean </span><span style="color:#0000c0">assertTrue</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Future</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date </span><span style="color:#0000c0">dateInFuture</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Past</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Date </span><span style="color:#0000c0">dateInPast</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Max</span><span style="color:#000000">(value = 100)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">intMax100</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Min</span><span style="color:#000000">(value = 10)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">intMin10</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotBlank</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">strNotBlank</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Size</span><span style="color:#000000">(min = 4, max = 6)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">strBetween4and6</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Pattern</span><span style="color:#000000">(regexp = </span><span style="color:#2a00ff">&quot;^\\d{2}:\\d{2}:\\d{2}$&quot;</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">hhmmss</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Email</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">email</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Length</span><span style="color:#000000">(max = 4, min = 4)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">str4</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Range</span><span style="color:#000000">(min = 10, max = 14)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@NotNull</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">int1014</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span></span>
+<span class="odt-code-line">    </span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@URL</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">url</span><span style="color:#000000">;</span></span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
-<span class="odt-code-line"><span style="color:#000000">        ...</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">        ...</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>Error messages are externalized in the [messages.properties] files:</p>
@@ -2626,8 +2627,8 @@
 
 <p>The [messages_fr.properties] file is as follows:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">NotNull=The field cannot be empty</span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.actionModel01.</span><span style="color:#2a00ff">a=Parameter [a] must be an integer</span></span>
 <span class="odt-code-line"><span style="color:#000000">Range.actionModel03.</span><span style="color:#2a00ff">int1014=The value must be in the range [10,14]</span></span>
 <span class="odt-code-line"><span style="color:#000000">NotBlank.actionModel03.</span><span style="color:#2a00ff">strNotBlank=The string must not be blank</span></span>
@@ -2645,17 +2646,15 @@
 </code></pre></div>
 
 <p>Error messages have been added to lines 4–16. They are in the following format:</p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#000000">code=message</span></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>code=message
 </code></pre></div>
-
 <p>The codes cannot be arbitrary. They are the ones displayed in the previous [/m27] action. For example:</p>
 <p><img src="images/10000000000004410000001A426834AE.png" style="width:17.729cm;height:0.423cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004410000001A426834AE.png" /></p>
 <p>In the message files, you must use one of the four codes above for the [int1014] field.</p>
 <p>The [messages_en.properties] file is as follows:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#2a00ff">NotNull=The field cannot be empty</span></span>
-<span class="odt-code-line"><span style="color:#2a00ff">typeMismatch=Invalid format</span></span>
+<span class="odt-code-line">NotNull=The field cannot be empty</span>
+<span class="odt-code-line">typeMismatch=Invalid format</span>
 <span class="odt-code-line"><span style="color:#000000">typeMismatch.actionModel01.</span><span style="color:#2a00ff">a=Parameter [a] must be an integer</span></span>
 <span class="odt-code-line"><span style="color:#000000">Range.actionModel03.</span><span style="color:#2a00ff">int1014=Value must be in the [10,14] range</span></span>
 <span class="odt-code-line"><span style="color:#000000">NotBlank.actionModel03.</span><span style="color:#2a00ff">strNotBlank=String cannot be empty</span></span>
@@ -2674,7 +2673,7 @@
 
 <p>The action model [ActionModel03] is used by the following action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#3f7f5f">// ----------------------- externalization of error messages ------------------------</span></span>
+<span class="odt-code-line">// ----------------------- externalization of error messages ------------------------</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/m28&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">POST</span><span style="color:#000000">)</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Map&lt;String, Object&gt; m28(</span><span style="color:#646464">@Valid </span><span style="color:#000000">ActionModel03 </span><span style="color:#6a3e3e">data</span><span style="color:#000000">, BindingResult </span><span style="color:#6a3e3e">result</span><span style="color:#000000">, HttpServletRequest </span><span style="color:#6a3e3e">request</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        Map&lt;String, Object&gt; </span><span style="color:#6a3e3e">map </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">HashMap&lt;String, Object&gt;();</span></span>
@@ -2699,22 +2698,22 @@
 <span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#6a3e3e">msg </span><span style="color:#000000">= </span><span style="color:#6a3e3e">ctx</span><span style="color:#000000">.getMessage(</span><span style="color:#6a3e3e">codes</span><span style="color:#000000">[</span><span style="color:#6a3e3e">i</span><span style="color:#000000">], </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">, </span><span style="color:#6a3e3e">locale</span><span style="color:#000000">);</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    } </span><span style="font-weight:bold;color:#7f0055">catch </span><span style="color:#000000">(Exception </span><span style="color:#6a3e3e">e</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">                    }</span></span>
-<span class="odt-code-line"><span style="color:#000000">                    i++;</span></span>
-<span class="odt-code-line"><span style="color:#000000">                }</span></span>
+<span class="odt-code-line">                    }</span>
+<span class="odt-code-line">                    i++;</span>
+<span class="odt-code-line">                }</span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#3f7f5f">// Did we find it?</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="font-weight:bold;color:#7f0055">if </span><span style="color:#000000">(</span><span style="color:#6a3e3e">msg </span><span style="color:#000000">== </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#6a3e3e">msg </span><span style="color:#000000">= String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;Enter a message for one of the codes [%s]&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">listCodes</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">                }</span></span>
+<span class="odt-code-line">                }</span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#3f7f5f">// Found it - add the error to the dictionary</span></span>
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#6a3e3e">error</span><span style="color:#000000">.getField(), </span><span style="color:#6a3e3e">msg</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">            }</span></span>
+<span class="odt-code-line">            }</span>
 <span class="odt-code-line"><span style="color:#000000">        } </span><span style="font-weight:bold;color:#7f0055">else </span><span style="color:#000000">{</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#3f7f5f">// no errors</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;data&quot;</span><span style="color:#000000">, </span><span style="color:#6a3e3e">data</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        }</span></span>
+<span class="odt-code-line">        }</span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 </code></pre></div>
 
 <p>We have already discussed this type of code. The only thing that really matters is line 23: the error message returned depends on the locale of the request.</p>

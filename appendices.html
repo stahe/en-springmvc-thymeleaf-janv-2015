@@ -752,7 +752,7 @@
 
 <p><a id="refheading256711779844303"></a></p>
 <h1 id="9-appendices">9. <span style="color: #365f91">Appendices</span></h1>
-<p><a id="refheading1633352067866943"></a><span style="color: #000000">Here we explain how to install the tools used in this document on Windows 7 or 8 machines.</span></p>
+<p><span style="color: #000000"><a id="refheading1633352067866943"></a>Here we explain how to install the tools used in this document on Windows 7 or 8 machines.</span></p>
 <p><a id="refheading256713779844303"></a></p>
 <h2 id="91-installing-a-jdk">9.1. <span style="color: #4f81bd">Installing a JDK</span></h2>
 <p><a id="refheading472751712028290"></a>The latest JDK can be found at the URL [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span></u></a>] (October 2014). We will refer to the JDK installation folder as &lt;jdk-install&gt; hereafter.</p>
@@ -774,21 +774,21 @@
 <p>It contains the following lines:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f5fbf">&lt;!-- localRepository</span></span>
-<span class="odt-code-line"><span style="color:#000000">   | The path to the local repository Maven will use to store artifacts.</span></span>
-<span class="odt-code-line"><span style="color:#000000">   |</span></span>
-<span class="odt-code-line"><span style="color:#000000">   | Default: ${user.home}/.m2/repository</span></span>
-<span class="odt-code-line"><span style="color:#000000">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">--&gt;</span></span>
+<span class="odt-code-line">   | The path to the local repository Maven will use to store artifacts.</span>
+<span class="odt-code-line">   |</span>
+<span class="odt-code-line">   | Default: ${user.home}/.m2/repository</span>
+<span class="odt-code-line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span>
+<span class="odt-code-line">--&gt;</span>
 </code></pre></div>
 
 <p>The default value on line 4, if like me your {user.home} path contains a space (for example [C:\Users\Serge Tahé]), can cause issues with certain software, including IntelliJ IDEA. You should then write something like:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f5fbf">&lt;!-- localRepository</span></span>
-<span class="odt-code-line"><span style="color:#000000">   | The path to the local repository Maven will use to store artifacts.</span></span>
-<span class="odt-code-line"><span style="color:#000000">   |</span></span>
-<span class="odt-code-line"><span style="color:#000000">   | Default: ${user.home}/.m2/repository</span></span>
-<span class="odt-code-line"><span style="color:#000000">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  --&gt;</span></span>
+<span class="odt-code-line">   | The path to the local repository Maven will use to store artifacts.</span>
+<span class="odt-code-line">   |</span>
+<span class="odt-code-line">   | Default: ${user.home}/.m2/repository</span>
+<span class="odt-code-line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span>
+<span class="odt-code-line">  --&gt;</span>
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">localRepository</span><span style="color:#008080">&gt;</span><span style="background-color:#ff950e;color:#000000">D:\Programs\devjava\maven\.m2\repository</span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">/localRepository</span><span style="color:#008080">&gt;</span></span>
 </code></pre></div>
 
@@ -943,8 +943,8 @@
   </li>
 </ul>
 
-<p><a id="json"></a>
-<a id="refheading191922103626402"></a></p>
+<p><a id="refheading191922103626402"></a>
+<a id="json"></a></p>
 <h2 id="97-managing-json-in-java">9.7. <span style="color: #4f81bd">Managing JSON in Java</span></h2>
 <p>Transparently for the developer, the [Spring MVC] framework uses the [Jackson] JSON library. To illustrate what JSON (JavaScript Object Notation) is, we present here a program that serializes objects into JSON and does the reverse by deserializing the generated JSON strings to recreate the original objects.</p>
 <p>The &#x27;Jackson&#x27; library allows you to construct:</p>
@@ -998,22 +998,22 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// constructors</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person() {</span></span>
 <span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person(String lastName, String firstName, </span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#000000">age) {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.lastName = lastName;</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.firstName = firstName;</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.age = age;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// signature</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.format(</span><span style="color:#2a00ff">&quot;Person[%s, %s, %d]&quot;</span><span style="color:#000000">, lastName, firstName, age);</span></span>
-<span class="odt-code-line"><span style="color:#000000">    }</span></span>
+<span class="odt-code-line">    }</span>
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
-<span class="odt-code-line"><span style="color:#000000">...</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>The [Main] class is as follows:</p>
@@ -1034,7 +1034,7 @@
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// creating a person</span></span>
 <span class="odt-code-line"><span style="color:#000000">    Person paul = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Person(</span><span style="color:#2a00ff">&quot;Denis&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Paul&quot;</span><span style="color:#000000">, 40);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Display JSON</span></span>
-<span class="odt-code-line"><span style="color:#000000">    String json = mapper.writeValueAsString(paul);</span></span>
+<span class="odt-code-line">    String json = mapper.writeValueAsString(paul);</span>
 <span class="odt-code-line"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;JSON=&quot; </span><span style="color:#000000">+ json);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Instantiate Person from JSON</span></span>
 <span class="odt-code-line"><span style="color:#000000">    Person p = mapper.readValue(json, Person.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">);</span></span>
@@ -1044,17 +1044,17 @@
 <span class="odt-code-line"><span style="color:#000000">    Person virginie = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Person(</span><span style="color:#2a00ff">&quot;Radot&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;Virginie&quot;</span><span style="color:#000000">, 20);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    Person[] people = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">Person[]{paul, virginie};</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// display JSON</span></span>
-<span class="odt-code-line"><span style="color:#000000">    json = mapper.writeValueAsString(people);</span></span>
+<span class="odt-code-line">    json = mapper.writeValueAsString(people);</span>
 <span class="odt-code-line"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;JSON people=&quot; </span><span style="color:#000000">+ json);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// dictionary</span></span>
 <span class="odt-code-line"><span style="color:#000000">    Map&lt;String, Person&gt; hpeople = </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">HashMap&lt;String, Person&gt;();</span></span>
 <span class="odt-code-line"><span style="color:#000000">    hpeople.put(</span><span style="color:#2a00ff">&quot;1&quot;</span><span style="color:#000000">, paul);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    hpeople.put(</span><span style="color:#2a00ff">&quot;2&quot;</span><span style="color:#000000">, virginie);</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// Display JSON</span></span>
-<span class="odt-code-line"><span style="color:#000000">    json = mapper.writeValueAsString(hpeople);</span></span>
+<span class="odt-code-line">    json = mapper.writeValueAsString(hpeople);</span>
 <span class="odt-code-line"><span style="color:#000000">    System.out.println(</span><span style="color:#2a00ff">&quot;JSON hpeople=&quot; </span><span style="color:#000000">+ json);</span></span>
-<span class="odt-code-line"><span style="color:#000000">  }</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line">  }</span>
+<span class="odt-code-line">}</span>
 </code></pre></div>
 
 <p>Executing this class produces the following screen output:</p>
@@ -1087,20 +1087,20 @@
 <p><a id="refheading1633412067866943"></a><span style="color: #000000">The [node.js] download site is [</span><a href="http://nodejs.org/"><u><span style="color: #0563c1">http://nodejs.org/</span></u></a><span style="color: #000000">]. Download the installer and run it. That’s all you need to do for now.</span></p>
 <p><a id="refheading2471111020423450"></a></p>
 <h3 id="982-installing-the-bower-tool">9.8.2. <span style="color: #4f81bd">Installing the [bower] tool</span></h3>
-<p><a id="refheading1633432067866943"></a><span style="color: #000000">The [bower] tool, which allows you to download JavaScript libraries, can be installed in several ways. We will install it from the command line:</span></p>
+<p><span style="color: #000000"><a id="refheading1633432067866943"></a>The [bower] tool, which allows you to download JavaScript libraries, can be installed in several ways. We will install it from the command line:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span style="color:#000000">C:\Users\Serge Tahé&gt;</span><span style="color:#ff3333">npm install -g bower</span></span>
-<span class="odt-code-line"><span style="color:#000000">C:\Users\Serge Tahé\AppData\Roaming\npm\bower -&gt; C:\Users\Serge Tahé\AppData\Roaming\npm\node_modules\bower\bin\bower</span></span>
-<span class="odt-code-line"><span style="color:#000000">bower@1.3.7 C:\Users\Serge Tahé\AppData\Roaming\npm\node_modules\bower</span></span>
-<span class="odt-code-line"><span style="color:#000000">├── stringify-object@0.2.1</span></span>
-<span class="odt-code-line"><span style="color:#000000">├── is-root@0.1.0</span></span>
-<span class="odt-code-line"><span style="color:#000000">├── junk@0.3.0</span></span>
-<span class="odt-code-line"><span style="color:#000000">...</span></span>
-<span class="odt-code-line"><span style="color:#000000">├── insight@0.3.1 (object-assign@0.1.2, async@0.2.10, lodash.debounce@2.4.1, req</span></span>
-<span class="odt-code-line"><span style="color:#000000">uest@2.27.0, configstore@0.2.3, inquirer@0.4.1)</span></span>
-<span class="odt-code-line"><span style="color:#000000">├── mout@0.9.1</span></span>
-<span class="odt-code-line"><span style="color:#000000">└── inquirer@0.5.1 (readline2@0.1.0, mute-stream@0.0.4, through@2.3.4, async@0.8</span></span>
-<span class="odt-code-line"><span style="color:#000000">.0, lodash@2.4.1, cli-color@0.3.2)</span></span>
+<span class="odt-code-line">C:\Users\Serge Tahé\AppData\Roaming\npm\bower -&gt; C:\Users\Serge Tahé\AppData\Roaming\npm\node_modules\bower\bin\bower</span>
+<span class="odt-code-line">bower@1.3.7 C:\Users\Serge Tahé\AppData\Roaming\npm\node_modules\bower</span>
+<span class="odt-code-line">├── stringify-object@0.2.1</span>
+<span class="odt-code-line">├── is-root@0.1.0</span>
+<span class="odt-code-line">├── junk@0.3.0</span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">├── insight@0.3.1 (object-assign@0.1.2, async@0.2.10, lodash.debounce@2.4.1, req</span>
+<span class="odt-code-line">uest@2.27.0, configstore@0.2.3, inquirer@0.4.1)</span>
+<span class="odt-code-line">├── mout@0.9.1</span>
+<span class="odt-code-line">└── inquirer@0.5.1 (readline2@0.1.0, mute-stream@0.0.4, through@2.3.4, async@0.8</span>
+<span class="odt-code-line">.0, lodash@2.4.1, cli-color@0.3.2)</span>
 </code></pre></div>
 
 <ul>
@@ -1133,7 +1133,7 @@
 
 <p><a id="refheading2471151020423450"></a></p>
 <h3 id="984-configuring-webstorm">9.8.4. <span style="color: #4f81bd">Configuring [WebStorm]</span></h3>
-<p><a id="refheading1633472067866943"></a><span style="color: #000000">Let’s now check the [WebStorm] configuration</span></p>
+<p><span style="color: #000000"><a id="refheading1633472067866943"></a>Let’s now check the [WebStorm] configuration</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000023F000001D0C3812AD7.png" style="display:inline-block; margin:4px;width:8.64cm;height:6.973cm;" class="odt-zoomable" data-zoom-src="images/100000000000023F000001D0C3812AD7.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000139000000EE0387A516.png" style="display:inline-block; margin:4px;width:5.791cm;height:4.403cm;" class="odt-zoomable" data-zoom-src="images/1000000000000139000000EE0387A516.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000533000001D872716BAF.png" style="display:inline-block; margin:4px;width:17.609cm;height:6.244cm;" class="odt-zoomable" data-zoom-src="images/1000000000000533000001D872716BAF.png" /></td></tr></table>
