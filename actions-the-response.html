@@ -694,20 +694,20 @@
 <p><a id="refheading58022676630786"></a></p>
 <h1 id="3-actions-the-response">3. <span style="color: #365f91">Actions: The Response</span></h1>
 <p>Let’s consider the architecture of a Spring MVC application:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047100000175D1035D6D.png" style="display:inline-block; margin:4px;width:15.042cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000047100000175D1035D6D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047100000175D1035D6D.png" width="569" height="187" style="display:inline-block; margin:4px;width:15.042cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000047100000175D1035D6D.png" /></td></tr></table>
 
 <p>In this chapter, we examine the process that routes the request [1] to the controller and the action [2a] that will process it, a mechanism known as routing. We also present the various responses [3] that an action can return to the browser. This may be something other than a <strong>V</strong> view [4b].</p>
 <p><a id="refheading1400771644545772"></a></p>
 <h2 id="31-the-new-project">3.1. <span style="color: #4f81bd">The new project</span></h2>
 <p>We create a new Spring MVC project:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000315000000A485700EB2.png" style="display:inline-block; margin:4px;width:10.439cm;height:2.17cm;" class="odt-zoomable" data-zoom-src="images/1000000000000315000000A485700EB2.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000315000000A485700EB2.png" width="395" height="82" style="display:inline-block; margin:4px;width:10.439cm;height:2.17cm;" class="odt-zoomable" data-zoom-src="images/1000000000000315000000A485700EB2.png" /></td></tr></table>
 
 <ul>
   <li>In [1-2], we create a new project based on Spring Boot;
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054E000002F5B4B35CA4.png" style="display:inline-block; margin:4px;width:17.965cm;height:10.014cm;" class="odt-zoomable" data-zoom-src="images/100000000000054E000002F5B4B35CA4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054E000002F5B4B35CA4.png" width="679" height="378" style="display:inline-block; margin:4px;width:17.965cm;height:10.014cm;" class="odt-zoomable" data-zoom-src="images/100000000000054E000002F5B4B35CA4.png" /></td></tr></table>
 
 <ul>
   <li>in [3], the name of the Maven project;
@@ -730,7 +730,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000506000002277DB2796B.png" style="display:inline-block; margin:4px;width:17.013cm;height:7.288cm;" class="odt-zoomable" data-zoom-src="images/1000000000000506000002277DB2796B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000506000002277DB2796B.png" width="643" height="275" style="display:inline-block; margin:4px;width:17.013cm;height:7.288cm;" class="odt-zoomable" data-zoom-src="images/1000000000000506000002277DB2796B.png" /></td></tr></table>
 
 <ul>
   <li>in [12], the generated project;
@@ -739,7 +739,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003400000014754520399.png" style="display:inline-block; margin:4px;width:11.007cm;height:4.327cm;" class="odt-zoomable" data-zoom-src="images/10000000000003400000014754520399.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003400000014754520399.png" width="416" height="164" style="display:inline-block; margin:4px;width:11.007cm;height:4.327cm;" class="odt-zoomable" data-zoom-src="images/10000000000003400000014754520399.png" /></td></tr></table>
 
 <ul>
   <li>in [16], the new package name;
@@ -749,14 +749,14 @@
 </ul>
 
 <p>We now create a new class;</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BA000001D7D9BF8842.png" style="display:inline-block; margin:4px;width:12.621cm;height:6.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA000001D7D9BF8842.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BA000001D7D9BF8842.png" width="477" height="236" style="display:inline-block; margin:4px;width:12.621cm;height:6.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA000001D7D9BF8842.png" /></td></tr></table>
 
 <ul>
   <li>in [1-3], we create a new class;
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049A000002F36C02CCE5.png" style="display:inline-block; margin:4px;width:15.584cm;height:9.987cm;" class="odt-zoomable" data-zoom-src="images/100000000000049A000002F36C02CCE5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049A000002F36C02CCE5.png" width="589" height="377" style="display:inline-block; margin:4px;width:15.584cm;height:9.987cm;" class="odt-zoomable" data-zoom-src="images/100000000000049A000002F36C02CCE5.png" /></td></tr></table>
 
 <ul>
   <li>in [5] we give it a name, and in [4] we specify its package;
@@ -767,23 +767,23 @@
 
 <p><span style="color: #000000">The class is currently as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">istia.st.springmvc;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ActionsController {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.springmvc;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ActionsController {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">We are updating this code as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">istia.st.springmvc;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.bind.annotation.RestController;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">@RestController</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ActionsController {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.springmvc;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.web.bind.annotation.RestController;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">@RestController</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ActionsController {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -799,26 +799,26 @@
 
 <p><span style="color: #000000">The other annotation [@Controller] we encountered is different: the actions of a controller annotated in this way return the name of the view that should be displayed. It is then the combination of this view and the model constructed by the action for this view that provides the response sent to the client.</span></p>
 <p><span style="color: #000000">The change in our project’s structure requires a change in our project’s configuration:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010200000074DF08F174.png" style="display:inline-block; margin:4px;width:4.78cm;height:2.148cm;" class="odt-zoomable" data-zoom-src="images/100000000000010200000074DF08F174.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010200000074DF08F174.png" width="181" height="81" style="display:inline-block; margin:4px;width:4.78cm;height:2.148cm;" class="odt-zoomable" data-zoom-src="images/100000000000010200000074DF08F174.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">The [Application] class evolves as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">istia.st.springmvc.main;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.boot.SpringApplication;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.boot.autoconfigure.EnableAutoConfiguration;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.context.annotation.ComponentScan;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.context.annotation.Configuration;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">@Configuration</span>
-<span class="odt-code-line"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">({</span><span style="color:#2a00ff">&quot;istia.st.springmvc.controllers&quot;</span><span style="color:#000000">})</span></span>
-<span class="odt-code-line"><span style="color:#000000">@EnableAutoConfiguration</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Application {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public static void </span><span style="color:#000000">main(String[] </span><span style="color:#6a3e3e">args</span><span style="color:#000000">) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        SpringApplication.</span><span style="font-style:italic;color:#000000">run</span><span style="color:#000000">(Application.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">, </span><span style="color:#6a3e3e">args</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.springmvc.main;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.boot.SpringApplication;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.boot.autoconfigure.EnableAutoConfiguration;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.annotation.ComponentScan;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.annotation.Configuration;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">@Configuration</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@ComponentScan</span><span style="color:#000000">({</span><span style="color:#2a00ff">&quot;istia.st.springmvc.controllers&quot;</span><span style="color:#000000">})</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">@EnableAutoConfiguration</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Application {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">static</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> main(String[] </span><span style="color:#6a3e3e">args</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        SpringApplication.</span><span style="font-style:italic;color:#000000">run</span><span style="color:#000000">(Application.</span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000">, </span><span style="color:#6a3e3e">args</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -831,14 +831,14 @@
 <h2 id="32-a01-a02-hello-world">3.2. <span style="color: #4f81bd">[/a01, /a02] - Hello world</span></h2>
 <p>Our first action will be as follows:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line">@RestController</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">ActionsController {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- hello world ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a01&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a01() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#2a00ff">&quot;Greetings from Spring Boot!&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">@RestController</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> ActionsController {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- hello world ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a01&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a01() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#2a00ff">&quot;Greetings from Spring Boot!&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -861,7 +861,7 @@
 </ul>
 
 <p>Let’s run the application as we have done several times before, then using the [Advanced Rest Client], we request the URL [/a01] with a GET [1-2]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E200000339A8D901EC.png" style="display:inline-block; margin:4px;width:16.536cm;height:10.913cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000339A8D901EC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E200000339A8D901EC.png" width="625" height="412" style="display:inline-block; margin:4px;width:16.536cm;height:10.913cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000339A8D901EC.png" /></td></tr></table>
 
 <ul>
   <li>in [3], the server’s response;
@@ -874,11 +874,11 @@
 
 <p>We add the following action [/a02] to the [ActionsController] (we will sometimes confuse the URL with the method that handles it, referred to as the action):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- accented characters - UTF8 ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a02&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces=</span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a02() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#2a00ff">&quot;accented characters: éèàôûî&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- accented characters - UTF8 ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a02&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces=</span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a02() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#2a00ff">&quot;caractères accentués : éèàôûî&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -887,10 +887,10 @@
 </ul>
 
 <p>To apply this new action, we must restart the application:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013F00000073B067554D.png" style="display:inline-block; margin:4px;width:5.911cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/100000000000013F00000073B067554D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013F00000073B067554D.png" width="223" height="81" style="display:inline-block; margin:4px;width:5.911cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/100000000000013F00000073B067554D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>The result is as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D30000033DA2D3BA7F.png" style="display:inline-block; margin:4px;width:16.339cm;height:10.968cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D30000033DA2D3BA7F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D30000033DA2D3BA7F.png" width="618" height="415" style="display:inline-block; margin:4px;width:16.339cm;height:10.968cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D30000033DA2D3BA7F.png" /></td></tr></table>
 
 <ul>
   <li>in [1], we see the type of document sent by the server;
@@ -903,12 +903,12 @@
 <h2 id="33-a03-return-an-xml-stream">3.3. <span style="color: #4f81bd">[/a03]: Return an XML stream</span></h2>
 <p>We add the following [/a03] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- text/xml ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a03&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/xml;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a03() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting </span><span style="color:#000000">= </span><span style="color:#2a00ff">&quot;&lt;greetings&gt;&lt;greeting&gt;Greetings from Spring Boot!&lt;/greeting&gt;&lt;/greetings&gt;&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- text/xml ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a03&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/xml;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a03() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000"> = </span><span style="color:#2a00ff">&quot;&lt;greetings&gt;&lt;greeting&gt;Greetings from Spring Boot!&lt;/greeting&gt;&lt;/greetings&gt;&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -917,7 +917,7 @@
 </ul>
 
 <p>Its execution produces the following:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053A00000325B7745E24.png" style="display:inline-block; margin:4px;width:17.701cm;height:10.65cm;" class="odt-zoomable" data-zoom-src="images/100000000000053A00000325B7745E24.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053A00000325B7745E24.png" width="669" height="403" style="display:inline-block; margin:4px;width:17.701cm;height:10.65cm;" class="odt-zoomable" data-zoom-src="images/100000000000053A00000325B7745E24.png" /></td></tr></table>
 
 <ul>
   <li>In [1], the HTTP header specifies that the sent document is HTML;
@@ -927,20 +927,20 @@
 </ul>
 
 <p>Remember that with Chrome, you can view the HTTP exchanges between the client and the server in the developer console (Ctrl-Shift-I):</p>
-<p><img src="images/10000000000002CC000001A402F932EA.png" style="width:13.259cm;height:7.779cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002CC000001A402F932EA.png" /></p>
+<p><img src="images/10000000000002CC000001A402F932EA.png" width="501" height="294" style="width:13.259cm;height:7.779cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002CC000001A402F932EA.png" /></p>
 <p>From now on, we will not systematically take screenshots of the HTTP exchanges between the client and the server. Sometimes, we will simply quote the text of these exchanges.</p>
 <p><a id="refheading1400831644545772"></a></p>
 <h2 id="34-a04-a05-returning-a-json-feed">3.4. <span style="color: #4f81bd">[/a04, /a05]: returning a JSON feed</span></h2>
 <p>We add the following [/a04] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- generate JSON ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a04&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Map&lt;String, Object&gt; a04() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        Map&lt;String, Object&gt; </span><span style="color:#6a3e3e">map </span><span style="color:#000000">= </span><span style="font-weight:bold;color:#7f0055">new </span><span style="color:#000000">HashMap&lt;String, Object&gt;();</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;1&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;one&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;2&quot;</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">new int</span><span style="color:#000000">[] { 4, 5 });</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- produce from jSON ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a04&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Map&lt;String, Object&gt; a04() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        Map&lt;String, Object&gt; </span><span style="color:#6a3e3e">map</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> HashMap&lt;String, Object&gt;();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;1&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;un&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">map</span><span style="color:#000000">.put(</span><span style="color:#2a00ff">&quot;2&quot;</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000">[] { 4, 5 });</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#6a3e3e">map</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -948,64 +948,64 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000128000000C9B255FBDD.png" style="display:inline-block; margin:4px;width:5.48cm;height:3.722cm;" class="odt-zoomable" data-zoom-src="images/1000000000000128000000C9B255FBDD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000128000000C9B255FBDD.png" width="207" height="141" style="display:inline-block; margin:4px;width:5.48cm;height:3.722cm;" class="odt-zoomable" data-zoom-src="images/1000000000000128000000C9B255FBDD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>The Jackson dependencies listed above are libraries for serializing and deserializing objects into JSON strings. Spring Boot will then use these libraries to serialize and deserialize the objects returned by the actions. An example of Java code for serializing and deserializing Java objects into JSON can be found in Section<a href="#refheading191922103626402"><u><span style="color: #0563c1"> 9.7</span></u></a>.</p>
 <p>Note on line 2 that we did not specify the type of the response being sent. We will see the default type that will be sent.</p>
 <p>The results in Chrome are as follows [1-3]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B2000001EBC2949A34.png" style="display:inline-block; margin:4px;width:15.901cm;height:6.495cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B2000001EBC2949A34.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B2000001EBC2949A34.png" width="601" height="245" style="display:inline-block; margin:4px;width:15.901cm;height:6.495cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B2000001EBC2949A34.png" /></td></tr></table>
 
 <p>Let’s now add the following action [/a05]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- generate JSON - 2 ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a05&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person a05() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return new </span><span style="color:#000000">Person(1, </span><span style="color:#2a00ff">&quot;Carole&quot;</span><span style="color:#000000">, 45);</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- produce from jSON - 2 ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a05&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne a05() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Personne(1,</span><span style="color:#2a00ff">&quot;carole&quot;</span><span style="color:#000000">,45);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>The [Person] class is as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000101000000A9A9964781.png" style="display:inline-block; margin:4px;width:4.761cm;height:3.131cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000A9A9964781.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000101000000A9A9964781.png" width="180" height="118" style="display:inline-block; margin:4px;width:4.761cm;height:3.131cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000A9A9964781.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">istia.st.sprinmvc.models;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">Person {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// identifier</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">Integer </span><span style="color:#0000c0">id</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// name</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private </span><span style="color:#000000">String </span><span style="color:#0000c0">name</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// age</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private int </span><span style="color:#0000c0">age</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// constructors</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person() {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person(String </span><span style="color:#6a3e3e">name</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#6a3e3e">age</span><span style="color:#000000">) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">name </span><span style="color:#000000">= </span><span style="color:#6a3e3e">name</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">age </span><span style="color:#000000">= </span><span style="color:#6a3e3e">age</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">Person(Integer </span><span style="color:#6a3e3e">id</span><span style="color:#000000">, String </span><span style="color:#6a3e3e">name</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">int </span><span style="color:#6a3e3e">age</span><span style="color:#000000">) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">(</span><span style="color:#6a3e3e">name</span><span style="color:#000000">, </span><span style="color:#6a3e3e">age</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">id </span><span style="color:#000000">= </span><span style="color:#6a3e3e">id</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String toString() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#000000">String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;[id=%s, name=%s, age=%d]&quot;</span><span style="color:#000000">, </span><span style="color:#0000c0">id</span><span style="color:#000000">, </span><span style="color:#0000c0">name</span><span style="color:#000000">, </span><span style="color:#0000c0">age</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// getters and setters</span></span>
-<span class="odt-code-line">...</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.sprinmvc.models;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Personne {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// identifier</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Integer </span><span style="color:#0000c0">id</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// name</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> String </span><span style="color:#0000c0">nom</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// age</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> </span><span style="color:#0000c0">age</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// manufacturers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne(String </span><span style="color:#6a3e3e">nom</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> </span><span style="color:#6a3e3e">age</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">nom</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">nom</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">age</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">age</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Personne(Integer </span><span style="color:#6a3e3e">id</span><span style="color:#000000">, String </span><span style="color:#6a3e3e">nom</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> </span><span style="color:#6a3e3e">age</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">(</span><span style="color:#6a3e3e">nom</span><span style="color:#000000">, </span><span style="color:#6a3e3e">age</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.</span><span style="color:#0000c0">id</span><span style="color:#000000"> = </span><span style="color:#6a3e3e">id</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@Override</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String toString() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> String.</span><span style="font-style:italic;color:#000000">format</span><span style="color:#000000">(</span><span style="color:#2a00ff">&quot;[id=%s, nom=%s,  age=%d]&quot;</span><span style="color:#000000">, </span><span style="color:#0000c0">id</span><span style="color:#000000">, </span><span style="color:#0000c0">nom</span><span style="color:#000000">, </span><span style="color:#0000c0">age</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// getters and setters</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027D0000033F92230223.png" style="display:inline-block; margin:4px;width:8.428cm;height:10.994cm;" class="odt-zoomable" data-zoom-src="images/100000000000027D0000033F92230223.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027D0000033F92230223.png" width="319" height="416" style="display:inline-block; margin:4px;width:8.428cm;height:10.994cm;" class="odt-zoomable" data-zoom-src="images/100000000000027D0000033F92230223.png" /></td></tr></table>
 
 <ul>
   <li>in [1], the server indicates that the document it is sending is JSON;
@@ -1018,10 +1018,10 @@
 <h2 id="35-a06-return-an-empty-stream">3.5. <span style="color: #4f81bd">[/a06]: return an empty stream</span></h2>
 <p>We add the following [/a06] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- return an empty stream ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a06&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">a06() {</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- render an empty stream ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a06&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> a06() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1030,19 +1030,19 @@
 </ul>
 
 <p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000165000001CFF8C32449.png" style="display:inline-block; margin:4px;width:6.609cm;height:8.571cm;" class="odt-zoomable" data-zoom-src="images/1000000000000165000001CFF8C32449.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000165000001CFF8C32449.png" width="250" height="324" style="display:inline-block; margin:4px;width:6.609cm;height:8.571cm;" class="odt-zoomable" data-zoom-src="images/1000000000000165000001CFF8C32449.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>Above, the HTTP [Content-Length] attribute in the response indicates that the server is sending an empty document.</p>
 <p><a id="refheading1400871644545772"></a></p>
 <h2 id="36-a07-a08-a09-data-type-with-content-type">3.6. <span style="color: #4f81bd">[/a07, /a08, /a09]: data type with [Content-Type]</span></h2>
 <p>We add the following action [/a07]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- text/html ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a07&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/html;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a07() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting </span><span style="color:#000000">= </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- text/html ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a07&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/html;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a07() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000"> = </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1053,7 +1053,7 @@
 </ul>
 
 <p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000020EF8993016.png" style="display:inline-block; margin:4px;width:17.027cm;height:6.959cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000020EF8993016.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000020EF8993016.png" width="644" height="263" style="display:inline-block; margin:4px;width:17.027cm;height:6.959cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000020EF8993016.png" /></td></tr></table>
 
 <ul>
   <li>in [1], we see that Chrome has interpreted the HTML tag &lt;h1&gt;, which displays its content in large font;
@@ -1062,12 +1062,12 @@
 
 <p>Now let’s do the same thing with the following [/a08] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- HTML result in text/plain ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a08&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a08() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting </span><span style="color:#000000">= </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- result HTML in text/plain ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a08&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a08() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000"> = </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1076,7 +1076,7 @@
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A8000001F295952CB8.png" style="display:inline-block; margin:4px;width:15.769cm;height:6.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A8000001F295952CB8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A8000001F295952CB8.png" width="596" height="249" style="display:inline-block; margin:4px;width:15.769cm;height:6.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A8000001F295952CB8.png" /></td></tr></table>
 
 <ul>
   <li>In [1], Chrome did not interpret the HTML tag &lt;h1&gt; because the server told it that it was sending a [text/plain] stream [2];
@@ -1085,12 +1085,12 @@
 
 <p>Let’s try something similar with the following [/a09] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- HTML result in text/xml ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a09&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/xml;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a09() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting </span><span style="color:#000000">= </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- result HTML in text/xml ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a09&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/xml;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a09() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000"> = </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1099,7 +1099,7 @@
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000002230D3503BE.png" style="display:inline-block; margin:4px;width:15.637cm;height:7.235cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000002230D3503BE.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000002230D3503BE.png" width="591" height="273" style="display:inline-block; margin:4px;width:15.637cm;height:7.235cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000002230D3503BE.png" /></td></tr></table>
 
 <ul>
   <li>In [1], Chrome did not interpret the HTML tag &lt;h1&gt; because the server told it that it was sending a [text/xml] stream [2]. It then treated the &lt;h1&gt; tag as an XML tag;
@@ -1110,19 +1110,19 @@
 <p><a id="refheading1400891644545772"></a></p>
 <h2 id="37-a10-a11-a12-redirecting-the-client">3.7. <span style="color: #4f81bd">[/a10, /a11, /a12]: redirecting the client</span></h2>
 <p>We create a new controller [RedirectController]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FA000000A233444B96.png" style="display:inline-block; margin:4px;width:4.63cm;height:3cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FA000000A233444B96.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FA000000A233444B96.png" width="175" height="113" style="display:inline-block; margin:4px;width:4.63cm;height:3cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FA000000A233444B96.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>The code for [RedirectController] will be as follows for now:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package </span><span style="color:#000000">istia.st.springmvc.controllers;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.stereotype.Controller;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.bind.annotation.RequestMapping;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import </span><span style="color:#000000">org.springframework.web.bind.annotation.RequestMethod;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">@Controller</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public class </span><span style="color:#000000">RedirectController {</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.springmvc.controllers;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.stereotype.Controller;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.web.bind.annotation.RequestMapping;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.web.bind.annotation.RequestMethod;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">@Controller</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> RedirectController {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1132,11 +1132,11 @@
 
 <p>We create the following [/a10] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ------------ bridge to a third-party action -----------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a10&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a10() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#2a00ff">&quot;a01&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ------------ bridge to third-party action -----------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a10&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a10() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#2a00ff">&quot;a01&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1145,7 +1145,7 @@
 </ul>
 
 <p>Here is an example:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D20000034074932B02.png" style="display:inline-block; margin:4px;width:16.325cm;height:11.007cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000034074932B02.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D20000034074932B02.png" width="617" height="416" style="display:inline-block; margin:4px;width:16.325cm;height:11.007cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000034074932B02.png" /></td></tr></table>
 
 <ul>
   <li>In [2], we received the stream from action [/a01];
@@ -1156,15 +1156,15 @@
 
 <p>We now create the following action [/a11]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ------------ 302 temporary redirect to a third-party action -----------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a11&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public </span><span style="color:#000000">String a11() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return </span><span style="color:#2a00ff">&quot;redirect:/a01&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ------------ temporary 302 redirect to a third-party action -----------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a11&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String a11() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="color:#2a00ff">&quot;redirect:/a01&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>We get the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004590000024724B5497D.png" style="display:inline-block; margin:4px;width:14.725cm;height:7.713cm;" class="odt-zoomable" data-zoom-src="images/10000000000004590000024724B5497D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004590000024724B5497D.png" width="557" height="292" style="display:inline-block; margin:4px;width:14.725cm;height:7.713cm;" class="odt-zoomable" data-zoom-src="images/10000000000004590000024724B5497D.png" /></td></tr></table>
 
 <ul>
   <li>In the Chrome logs [1-2], we see two requests, one to [/a11] and the other to [/a01];
@@ -1174,7 +1174,7 @@
 </ul>
 
 <p>The browser then makes the second request to the redirect URL:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C80000022512B4FA03.png" style="display:inline-block; margin:4px;width:16.193cm;height:7.264cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C80000022512B4FA03.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C80000022512B4FA03.png" width="612" height="275" style="display:inline-block; margin:4px;width:16.193cm;height:7.264cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C80000022512B4FA03.png" /></td></tr></table>
 
 <ul>
   <li>in [5], the client’s second request;
@@ -1189,12 +1189,12 @@
 <p>which means that the redirect is permanent. This difference between a temporary redirect (302) and a permanent redirect (301) is taken into account by some search engines.</p>
 <p>We write the action [/a12] that will perform this permanent redirect:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ------------ 301 permanent redirect to a third-party action----------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a12&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">a12(HttpServletResponse </span><span style="color:#6a3e3e">response</span><span style="color:#000000">) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.setStatus(301);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;Location&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;/a01&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ------------ permanent 301 redirect to a third-party action----------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a12&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> a12(HttpServletResponse </span><span style="color:#6a3e3e">response</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.setStatus(301);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;Location&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;/a01&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1215,7 +1215,7 @@
 </code></pre></div>
 <p>which is the redirect URL.</p>
 <p>Execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000162000001A442869D52.png" style="display:inline-block; margin:4px;width:6.549cm;height:7.77cm;" class="odt-zoomable" data-zoom-src="images/1000000000000162000001A442869D52.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014B0000008ED50DDD49.png" style="display:inline-block; margin:4px;width:6.13cm;height:2.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000014B0000008ED50DDD49.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000162000001A442869D52.png" width="248" height="294" style="display:inline-block; margin:4px;width:6.549cm;height:7.77cm;" class="odt-zoomable" data-zoom-src="images/1000000000000162000001A442869D52.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014B0000008ED50DDD49.png" width="232" height="99" style="display:inline-block; margin:4px;width:6.13cm;height:2.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000014B0000008ED50DDD49.png" /></td></tr></table>
 
 <p>From this example, we will learn how to:</p>
 <ul>
@@ -1228,18 +1228,18 @@
 <p><a id="refheading1400911644545772"></a></p>
 <h2 id="38-a13-generate-the-complete-response">3.8. <span style="color: #4f81bd">[/a13]: generate the complete response</span></h2>
 <p>It is possible to fully control the response, as shown by the following action in the [ResponsesController] class:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F7000000A4D658B54C.png" style="display:inline-block; margin:4px;width:4.57cm;height:3.034cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F7000000A4D658B54C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F7000000A4D658B54C.png" width="173" height="115" style="display:inline-block; margin:4px;width:4.57cm;height:3.034cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F7000000A4D658B54C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// ----------------------- full response generation ------------------------</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a13&quot;</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public void </span><span style="color:#000000">a13(HttpServletResponse </span><span style="color:#6a3e3e">response</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">throws </span><span style="color:#000000">IOException {</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.setStatus(666);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;header1&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;something&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;Content-Type&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;text/html;charset=UTF-8&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting </span><span style="color:#000000">= </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.getWriter().write(</span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- complete response generation ------------------------</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a13&quot;</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> a13(HttpServletResponse </span><span style="color:#6a3e3e">response</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">throws</span><span style="color:#000000"> IOException {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.setStatus(666);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;header1&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;qq chose&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.addHeader(</span><span style="color:#2a00ff">&quot;Content-Type&quot;</span><span style="color:#000000">, </span><span style="color:#2a00ff">&quot;text/html;charset=UTF-8&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        String </span><span style="color:#6a3e3e">greeting</span><span style="color:#000000"> = </span><span style="color:#2a00ff">&quot;&lt;h1&gt;Greetings from Spring Boot!&lt;/h1&gt;&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#6a3e3e">response</span><span style="color:#000000">.getWriter().write(</span><span style="color:#6a3e3e">greeting</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -1256,7 +1256,7 @@
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DF0000035F6CF10D07.png" style="display:inline-block; margin:4px;width:16.498cm;height:11.418cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DF0000035F6CF10D07.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DF0000035F6CF10D07.png" width="624" height="432" style="display:inline-block; margin:4px;width:16.498cm;height:11.418cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DF0000035F6CF10D07.png" /></td></tr></table>
 
 <ul>
   <li>in [1], we recognize the elements of our response;
@@ -1307,8 +1307,8 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
         This tutorial written by <strong>Serge Tahé</strong> is made available to the public under the terms of the
