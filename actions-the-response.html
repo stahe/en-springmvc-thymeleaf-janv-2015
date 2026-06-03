@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -439,10 +441,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#33-a03-return-an-xml-stream" class="md-nav__link">
+  <a href="#33-a03-render-a-xml-stream" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3. [/a03]: Return an XML stream
+        3.3. [/a03]: render a XML stream
       
     </span>
   </a>
@@ -450,10 +452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#34-a04-a05-returning-a-json-feed" class="md-nav__link">
+  <a href="#34-a04-a05-return-a-json-stream" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.4. [/a04, /a05]: returning a JSON feed
+        3.4. [/a04, /a05]: Return a jSON stream
       
     </span>
   </a>
@@ -472,10 +474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#36-a07-a08-a09-data-type-with-content-type" class="md-nav__link">
+  <a href="#36-a07-a08-a09-nature-of-the-flow-with-content-type" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.6. [/a07, /a08, /a09]: data type with [Content-Type]
+        3.6. [/a07, /a08, /a09]: nature of the flow with [Content-Type]
       
     </span>
   </a>
@@ -483,10 +485,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#37-a10-a11-a12-redirecting-the-client" class="md-nav__link">
+  <a href="#37-a10-a11-a12-redirect-the-client" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.7. [/a10, /a11, /a12]: redirecting the client
+        3.7. [/a10, /a11, /a12]: redirect the client
       
     </span>
   </a>
@@ -573,14 +575,14 @@
   
   
     <li class="md-nav__item">
-      <a href="client-side-javascript-validation.html" class="md-nav__link">
+      <a href="client-side-validation-for-javascript.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Client-side JavaScript validation
+    6. Client-side validation for Javascript
   
 
     
@@ -600,14 +602,14 @@
   
   
     <li class="md-nav__item">
-      <a href="ajaxifying-a-spring-mvc-application.html" class="md-nav__link">
+      <a href="ajaxification-of-a-spring-application-mvc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Ajaxifying a Spring MVC Application
+    7. Ajaxification of a Spring application MVC
   
 
     
@@ -691,55 +693,55 @@
 
 
 
-<p><a id="refheading58022676630786"></a></p>
+<p><span id="refheading58022676630786" name="refheading58022676630786" class="odt-bookmark-anchor"></span></p>
 <h1 id="3-actions-the-response">3. <span style="color: #365f91">Actions: The Response</span></h1>
 <p>Let’s consider the architecture of a Spring MVC application:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047100000175D1035D6D.png" width="569" height="187" style="display:inline-block; margin:4px;width:15.042cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000047100000175D1035D6D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000047100000175D1035D6D.png" width="569" height="187" style="display:inline-block; margin:4px;width:15.042cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000047100000175D1035D6D.png" /></td></tr></table>
 
-<p>In this chapter, we examine the process that routes the request [1] to the controller and the action [2a] that will process it, a mechanism known as routing. We also present the various responses [3] that an action can return to the browser. This may be something other than a <strong>V</strong> view [4b].</p>
-<p><a id="refheading1400771644545772"></a></p>
+<p>In this chapter, we examine the process that routes the request to the controller and the action that will process it, a mechanism known as routing. We also present the various responses [3] that an action can return to the browser. This may be something other than a <strong>V</strong> view [4b].</p>
+<p><span id="refheading1400771644545772" name="refheading1400771644545772" class="odt-bookmark-anchor"></span></p>
 <h2 id="31-the-new-project">3.1. <span style="color: #4f81bd">The new project</span></h2>
-<p>We create a new Spring MVC project:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000315000000A485700EB2.png" width="395" height="82" style="display:inline-block; margin:4px;width:10.439cm;height:2.17cm;" class="odt-zoomable" data-zoom-src="images/1000000000000315000000A485700EB2.png" /></td></tr></table>
+<p>We are creating a new Spring project:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000315000000A485700EB2.png" width="395" height="82" style="display:inline-block; margin:4px;width:10.439cm;height:2.17cm;" class="odt-zoomable" data-zoom-src="images/1000000000000315000000A485700EB2.png" /></td></tr></table>
 
 <ul>
-  <li>In [1-2], we create a new project based on Spring Boot;
+  <li>in [1-2], we create a new project based on Spring Boot;
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054E000002F5B4B35CA4.png" width="679" height="378" style="display:inline-block; margin:4px;width:17.965cm;height:10.014cm;" class="odt-zoomable" data-zoom-src="images/100000000000054E000002F5B4B35CA4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000054E000002F5B4B35CA4.png" width="679" height="378" style="display:inline-block; margin:4px;width:17.965cm;height:10.014cm;" class="odt-zoomable" data-zoom-src="images/100000000000054E000002F5B4B35CA4.png" /></td></tr></table>
 
 <ul>
   <li>in [3], the name of the Maven project;
   </li>
-  <li>in [4], the Maven group where the project’s compilation output will be placed;
+  <li>in [4], the Maven group in which the project’s compilation output will be placed;
   </li>
   <li>in [5], the name given to the compilation output;
   </li>
-  <li>in [6], a description of the project;
+  <li>[6], a description of the project;
   </li>
-  <li>in [7], the package where the project’s executable class will be placed;
+  <li>in [7], the package in which the project’s executable class will be placed;
   </li>
   <li>in [8], the nature of the project. This is a web project with Thymeleaf views. Here, we see all the ready-to-use Maven dependencies provided by the Spring Boot project;
   </li>
-  <li>in [9], we specify that the output of the Maven build will be packaged in a <b>JAR</b> archive rather than <b>a WAR</b>. The project will then use an embedded Tomcat server, which will be included in its dependencies;
+  <li>In [9], we specify that the output of the Maven build will be packaged in a <b>jar</b> archive rather than <b>a WAR file</b>. The project will then use an embedded Tomcat server included in its dependencies;
   </li>
-  <li>in [10], we proceed to the next step of the wizard;
+  <li>In [10], proceed to the next step of the wizard;
   </li>
-  <li>in [11], specify the project directory;
+  <li>In [11], specify the project folder;
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000506000002277DB2796B.png" width="643" height="275" style="display:inline-block; margin:4px;width:17.013cm;height:7.288cm;" class="odt-zoomable" data-zoom-src="images/1000000000000506000002277DB2796B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000506000002277DB2796B.png" width="643" height="275" style="display:inline-block; margin:4px;width:17.013cm;height:7.288cm;" class="odt-zoomable" data-zoom-src="images/1000000000000506000002277DB2796B.png" /></td></tr></table>
 
 <ul>
-  <li>in [12], the generated project;
+  <li>In [12], the generated project;
   </li>
   <li>In [14-15], rename the package [istia.st.springmvc];
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003400000014754520399.png" width="416" height="164" style="display:inline-block; margin:4px;width:11.007cm;height:4.327cm;" class="odt-zoomable" data-zoom-src="images/10000000000003400000014754520399.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003400000014754520399.png" width="416" height="164" style="display:inline-block; margin:4px;width:11.007cm;height:4.327cm;" class="odt-zoomable" data-zoom-src="images/10000000000003400000014754520399.png" /></td></tr></table>
 
 <ul>
   <li>in [16], the new package name;
@@ -749,19 +751,19 @@
 </ul>
 
 <p>We now create a new class;</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BA000001D7D9BF8842.png" width="477" height="236" style="display:inline-block; margin:4px;width:12.621cm;height:6.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA000001D7D9BF8842.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003BA000001D7D9BF8842.png" width="477" height="236" style="display:inline-block; margin:4px;width:12.621cm;height:6.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BA000001D7D9BF8842.png" /></td></tr></table>
 
 <ul>
   <li>in [1-3], we create a new class;
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049A000002F36C02CCE5.png" width="589" height="377" style="display:inline-block; margin:4px;width:15.584cm;height:9.987cm;" class="odt-zoomable" data-zoom-src="images/100000000000049A000002F36C02CCE5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000049A000002F36C02CCE5.png" width="589" height="377" style="display:inline-block; margin:4px;width:15.584cm;height:9.987cm;" class="odt-zoomable" data-zoom-src="images/100000000000049A000002F36C02CCE5.png" /></td></tr></table>
 
 <ul>
-  <li>in [5] we give it a name, and in [4] we specify its package;
+  <li>in [5] we name it and in [4] we specify its package;
   </li>
-  <li>in [6] the new project;
+  <li>in [6], the new project;
   </li>
 </ul>
 
@@ -787,9 +789,9 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">Line 6: The [@RestController] annotation indicates two things:</span>
+  <li><span style="color: #000000">line 6: the annotation [@RestController] indicates two things:</span>
     <ul>
-      <li><span style="color: #000000">that the [ActionsController] class annotated in this way is a Spring MVC controller, and therefore contains actions that handle client URLs;</span>
+      <li><span style="color: #000000">that the class [ActionsController], annotated in this way, is a Spring controller MVC, and therefore contains actions that handle requests from URL to clients;</span>
       </li>
       <li><span style="color: #000000">that the result of these actions is sent to the client;</span>
       </li>
@@ -797,9 +799,9 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">The other annotation [@Controller] we encountered is different: the actions of a controller annotated in this way return the name of the view that should be displayed. It is then the combination of this view and the model constructed by the action for this view that provides the response sent to the client.</span></p>
+<p><span style="color: #000000">The other annotation, [@Controller], that we encountered is different: the actions of a controller annotated in this way return the name of the view that should be displayed. It is then the combination of this view and the model constructed by the action for this view that provides the response sent to the client.</span></p>
 <p><span style="color: #000000">The change in our project’s structure requires a change in our project’s configuration:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010200000074DF08F174.png" width="181" height="81" style="display:inline-block; margin:4px;width:4.78cm;height:2.148cm;" class="odt-zoomable" data-zoom-src="images/100000000000010200000074DF08F174.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000010200000074DF08F174.png" width="181" height="81" style="display:inline-block; margin:4px;width:4.78cm;height:2.148cm;" class="odt-zoomable" data-zoom-src="images/100000000000010200000074DF08F174.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">The [Application] class evolves as follows:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -822,12 +824,12 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 9: The [ComponentScan] annotation takes as a parameter an array of package names where Spring Boot should look for Spring components. Here, we include the package [<span style="color: #2a00ff">istia.st.springmvc.controllers</span>] in this array so that the controller annotated with [@RestController] can be found;
+  <li>line 9: the [ComponentScan] annotation accepts as a parameter an array of package names where Spring Boot should look for Spring components. Here we include the [istia.st.springmvc.controllers] package in this array so that the controller annotated with [@RestController] can be found;
   </li>
 </ul>
 
-<p><span style="color: #000000">We will create various actions in the controller to illustrate their main features. First, we will focus on the various types of responses possible for an action in an application without views.</span></p>
-<p><a id="refheading1400791644545772"></a></p>
+<p><span style="color: #000000">We will build various actions in the controller to illustrate their main features. First, we will focus on the various types of responses possible for an action in an application without views.</span></p>
+<p><span id="refheading1400791644545772" name="refheading1400791644545772" class="odt-bookmark-anchor"></span></p>
 <h2 id="32-a01-a02-hello-world">3.2. <span style="color: #4f81bd">[/a01, /a02] - Hello world</span></h2>
 <p>Our first action will be as follows:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -842,9 +844,9 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 4: The [<span style="color: #646464">RequestMapping</span>] annotation specifies the request handled by the annotated action:
+  <li>line 4: the annotation [RequestMapping] qualifies the request processed by the annotated action:
     <ul>
-      <li>the [value] attribute is the URL being processed,
+      <li>the [value] attribute is the processed URL,
       </li>
       <li>the [method] attribute specifies the accepted method;
       </li>
@@ -852,27 +854,27 @@
   </li>
 </ul>
 
-<p>Thus, the method [a01] handles the HTTP request [GET /a01].</p>
+<p>Thus, the method [a01] processes the request HTTP [GET /a01].</p>
 <ul>
-  <li>line 5: the [a01] method returns a [String] type, which will be sent as-is to the client;
+  <li>line 5: the method [a01] returns a type [String], which will be sent as-is to the client;
   </li>
-  <li>line 6: the returned string;
+  <li>Line 6: The returned string;
   </li>
 </ul>
 
-<p>Let’s run the application as we have done several times before, then using the [Advanced Rest Client], we request the URL [/a01] with a GET [1-2]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E200000339A8D901EC.png" width="625" height="412" style="display:inline-block; margin:4px;width:16.536cm;height:10.913cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000339A8D901EC.png" /></td></tr></table>
+<p>Let’s run the application as we have done several times before, and then with the client [Advanced Rest Client], we request the URL [/a01] with a GET [1-2]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E200000339A8D901EC.png" width="625" height="412" style="display:inline-block; margin:4px;width:16.536cm;height:10.913cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000339A8D901EC.png" /></td></tr></table>
 
 <ul>
-  <li>in [3], the server’s response;
+  <li>in [3], the server&#x27;s response;
   </li>
-  <li>in [4], the HTTP headers of the response. We can see that the encoding used is [ISO-8859-1]. We might prefer UTF-8 encoding. This can be configured;
+  <li>in [4], the headers of the response; we see that the encoding used is [ISO-8859-1]. We may prefer UTF-8 encoding. This can be configured;
   </li>
   <li>in [5], we request the same URL using the Chrome browser;
   </li>
 </ul>
 
-<p>We add the following action [/a02] to the [ActionsController] (we will sometimes confuse the URL with the method that handles it, referred to as the action):</p>
+<p>We add the following [/a02] action to the [ActionsController] controller (this may sometimes lead to confusion between URL and the method that handles it under the action name):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- accented characters - UTF8 ------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a02&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces=</span><span style="color:#2a00ff">&quot;text/plain;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
@@ -882,26 +884,25 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 2: The attribute [<span style="color: #000000">produces=</span><span style="color: #2a00ff">&quot;text/plain;charset=UTF-8&quot;</span>] indicates that the action sends a text stream with characters encoded in [UTF-8] format. This format specifically allows the use of accented characters;
+  <li>line 2: the [produces=&quot;text/plain;charset=UTF-8&quot;] attribute indicates that the action sends a text stream with characters encoded in the [UTF-8] format. This format specifically allows the use of accented characters;
   </li>
 </ul>
 
 <p>To apply this new action, we must restart the application:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013F00000073B067554D.png" width="223" height="81" style="display:inline-block; margin:4px;width:5.911cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/100000000000013F00000073B067554D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000013F00000073B067554D.png" width="223" height="81" style="display:inline-block; margin:4px;width:5.911cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/100000000000013F00000073B067554D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <p>The result is as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D30000033DA2D3BA7F.png" width="618" height="415" style="display:inline-block; margin:4px;width:16.339cm;height:10.968cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D30000033DA2D3BA7F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004D30000033DA2D3BA7F.png" width="618" height="415" style="display:inline-block; margin:4px;width:16.339cm;height:10.968cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D30000033DA2D3BA7F.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], we see the type of document sent by the server;
+  <li>in [1], we can see the nature of the document sent by the server;
   </li>
-  <li>In [2-3], the accented characters are clearly visible;
+  <li>In [2-3], we clearly see the accented characters;
   </li>
 </ul>
-
-<p><a id="refheading1400811644545772"></a></p>
-<h2 id="33-a03-return-an-xml-stream">3.3. <span style="color: #4f81bd">[/a03]: Return an XML stream</span></h2>
-<p>We add the following [/a03] action:</p>
+<p><span id="refheading1400811644545772" name="refheading1400811644545772" class="odt-bookmark-anchor"></span></p>
+<h2 id="33-a03-render-a-xml-stream">3.3. <span style="color: #4f81bd">[/a03]: render a XML stream</span></h2>
+<p>We add the following action [/a03]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- text/xml ------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a03&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/xml;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
@@ -912,26 +913,26 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 2: The attribute [<span style="color: #000000">produces=</span><span style="color: #2a00ff">&quot;text/xml;charset=UTF-8&quot;</span>] indicates that the action sends an XML stream with characters encoded in [UTF-8] format;
+  <li>line 2: the [produces=&quot;text/xml;charset=UTF-8&quot;] attribute indicates that the action sends a XML stream with characters encoded in the [UTF-8] format;
   </li>
 </ul>
 
 <p>Its execution produces the following:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053A00000325B7745E24.png" width="669" height="403" style="display:inline-block; margin:4px;width:17.701cm;height:10.65cm;" class="odt-zoomable" data-zoom-src="images/100000000000053A00000325B7745E24.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000053A00000325B7745E24.png" width="669" height="403" style="display:inline-block; margin:4px;width:17.701cm;height:10.65cm;" class="odt-zoomable" data-zoom-src="images/100000000000053A00000325B7745E24.png" /></td></tr></table>
 
 <ul>
-  <li>In [1], the HTTP header specifies that the sent document is HTML;
+  <li>in [1], the HTTP header specifies that the sent document is in HTML;
   </li>
-  <li>in [2], the Chrome browser uses this information to format the received XML text;
+  <li>In [2], the Chrome browser uses this information to format the received XML text;
   </li>
 </ul>
 
-<p>Remember that with Chrome, you can view the HTTP exchanges between the client and the server in the developer console (Ctrl-Shift-I):</p>
+<p>Note that with Chrome, you can view the HTTP exchanges between the client and the server in the developer console (Ctrl-Shift-I):</p>
 <p><img src="images/10000000000002CC000001A402F932EA.png" width="501" height="294" style="width:13.259cm;height:7.779cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002CC000001A402F932EA.png" /></p>
-<p>From now on, we will not systematically take screenshots of the HTTP exchanges between the client and the server. Sometimes, we will simply quote the text of these exchanges.</p>
-<p><a id="refheading1400831644545772"></a></p>
-<h2 id="34-a04-a05-returning-a-json-feed">3.4. <span style="color: #4f81bd">[/a04, /a05]: returning a JSON feed</span></h2>
-<p>We add the following [/a04] action:</p>
+<p>From now on, we will not systematically take screenshots of the HTTP exchanges between the client and the server. Sometimes, we will simply list the text of these exchanges.</p>
+<p><span id="refheading1400831644545772" name="refheading1400831644545772" class="odt-bookmark-anchor"></span></p>
+<h2 id="34-a04-a05-return-a-json-stream">3.4. <span style="color: #4f81bd">[/a04, /a05]: Return a jSON stream</span></h2>
+<p>We are adding the following [/a04] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- produce from jSON ------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a04&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
@@ -944,18 +945,18 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 3: The action returns a [Map] type, a dictionary. Recall that with a [@RestController] controller, the result of the action is the response sent to the client. Since HTTP is a protocol for exchanging lines of text, the client’s response must be serialized into a string. To do this, Spring MVC uses various converters [Object &lt;---&gt; string]. The association of a specific object with a converter is done through configuration. Here, Spring Boot’s autoconfiguration will inspect the project’s dependencies:
+  <li>Line 3: The action returns a [Map] type, a dictionary. Recall that with a [@RestController] controller, the result of the action is the response sent to the client. Since the HTTP protocol is a text-based exchange protocol, the client’s response must be serialized into a string. To do this, Spring MVC uses various [Objet &lt;---&gt; chaîne de caractères] converters. The association of a specific object with a converter is done through configuration. Here, Spring Boot’s autoconfiguration will inspect the project’s dependencies:
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000128000000C9B255FBDD.png" width="207" height="141" style="display:inline-block; margin:4px;width:5.48cm;height:3.722cm;" class="odt-zoomable" data-zoom-src="images/1000000000000128000000C9B255FBDD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000128000000C9B255FBDD.png" width="207" height="141" style="display:inline-block; margin:4px;width:5.48cm;height:3.722cm;" class="odt-zoomable" data-zoom-src="images/1000000000000128000000C9B255FBDD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>The Jackson dependencies listed above are libraries for serializing and deserializing objects into JSON strings. Spring Boot will then use these libraries to serialize and deserialize the objects returned by the actions. An example of Java code for serializing and deserializing Java objects into JSON can be found in Section<a href="#refheading191922103626402"><u><span style="color: #0563c1"> 9.7</span></u></a>.</p>
+<p>The Jackson dependencies listed above are libraries for serializing and deserializing objects into jSON strings. Spring Boot will then use these libraries to serialize and deserialize the objects returned by the actions. An example of Java code for serializing/deserializing Java objects into jSON can be found in Section<a href="appendices.html#refheading191922103626402"><u><span style="color: #0563c1"> 9.7</span></u></a>.</p>
 <p>Note on line 2 that we did not specify the type of the response being sent. We will see the default type that will be sent.</p>
-<p>The results in Chrome are as follows [1-3]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B2000001EBC2949A34.png" width="601" height="245" style="display:inline-block; margin:4px;width:15.901cm;height:6.495cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B2000001EBC2949A34.png" /></td></tr></table>
+<p>The results are as follows in Chrome [1-3]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004B2000001EBC2949A34.png" width="601" height="245" style="display:inline-block; margin:4px;width:15.901cm;height:6.495cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B2000001EBC2949A34.png" /></td></tr></table>
 
-<p>Let’s now add the following action [/a05]:</p>
+<p>Now let’s add the following action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- produce from jSON - 2 ------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a05&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
@@ -964,8 +965,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>The [Person] class is as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000101000000A9A9964781.png" width="180" height="118" style="display:inline-block; margin:4px;width:4.761cm;height:3.131cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000A9A9964781.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p>The [Personne] class is as follows:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000101000000A9A9964781.png" width="180" height="118" style="display:inline-block; margin:4px;width:4.761cm;height:3.131cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000A9A9964781.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.sprinmvc.models;</span></span></span>
@@ -1004,17 +1005,16 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027D0000033F92230223.png" width="319" height="416" style="display:inline-block; margin:4px;width:8.428cm;height:10.994cm;" class="odt-zoomable" data-zoom-src="images/100000000000027D0000033F92230223.png" /></td></tr></table>
+<p>Execution yields the following results:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000027D0000033F92230223.png" width="319" height="416" style="display:inline-block; margin:4px;width:8.428cm;height:10.994cm;" class="odt-zoomable" data-zoom-src="images/100000000000027D0000033F92230223.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], the server indicates that the document it is sending is JSON;
+  <li>in [1], the server indicates that the document it is sending is jSON;
   </li>
-  <li>in [2], the received JSON document;
+  <li>in [2], the received document jSON;
   </li>
 </ul>
-
-<p><a id="refheading1400851644545772"></a></p>
+<p><span id="refheading1400851644545772" name="refheading1400851644545772" class="odt-bookmark-anchor"></span></p>
 <h2 id="35-a06-return-an-empty-stream">3.5. <span style="color: #4f81bd">[/a06]: return an empty stream</span></h2>
 <p>We add the following [/a06] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -1025,17 +1025,17 @@
 </code></pre></div>
 
 <ul>
-  <li>On line 3, the [/a06] action returns nothing. Spring MVC will then generate an empty response to the client;
+  <li>line 3, the [/a06] action returns nothing. Spring MVC will then generate an empty response to the client;
   </li>
 </ul>
 
 <p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000165000001CFF8C32449.png" width="250" height="324" style="display:inline-block; margin:4px;width:6.609cm;height:8.571cm;" class="odt-zoomable" data-zoom-src="images/1000000000000165000001CFF8C32449.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000165000001CFF8C32449.png" width="250" height="324" style="display:inline-block; margin:4px;width:6.609cm;height:8.571cm;" class="odt-zoomable" data-zoom-src="images/1000000000000165000001CFF8C32449.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <p>Above, the HTTP [Content-Length] attribute in the response indicates that the server is sending an empty document.</p>
-<p><a id="refheading1400871644545772"></a></p>
-<h2 id="36-a07-a08-a09-data-type-with-content-type">3.6. <span style="color: #4f81bd">[/a07, /a08, /a09]: data type with [Content-Type]</span></h2>
-<p>We add the following action [/a07]:</p>
+<p><span id="refheading1400871644545772" name="refheading1400871644545772" class="odt-bookmark-anchor"></span></p>
+<h2 id="36-a07-a08-a09-nature-of-the-flow-with-content-type">3.6. <span style="color: #4f81bd">[/a07, /a08, /a09]: nature of the flow with [Content-Type]</span></h2>
+<p>We add the following [/a07] action:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- text/html ------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a07&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;text/html;charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
@@ -1046,17 +1046,17 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 2: The [/a07] action returns an HTML stream [text/html];
+  <li>line 2, the action [/a07] returns a stream HTML [text/html];
   </li>
-  <li>line 4: an HTML string;
+  <li>line 4: a string HTML;
   </li>
 </ul>
 
 <p>The execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000020EF8993016.png" width="644" height="263" style="display:inline-block; margin:4px;width:17.027cm;height:6.959cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000020EF8993016.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005070000020EF8993016.png" width="644" height="263" style="display:inline-block; margin:4px;width:17.027cm;height:6.959cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000020EF8993016.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], we see that Chrome has interpreted the HTML tag &lt;h1&gt;, which displays its content in large font;
+  <li>In [1], we see that Chrome has interpreted the HTML tag &lt;h1&gt;, which displays its content in large font;
   </li>
 </ul>
 
@@ -1076,10 +1076,10 @@
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A8000001F295952CB8.png" width="596" height="249" style="display:inline-block; margin:4px;width:15.769cm;height:6.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A8000001F295952CB8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004A8000001F295952CB8.png" width="596" height="249" style="display:inline-block; margin:4px;width:15.769cm;height:6.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A8000001F295952CB8.png" /></td></tr></table>
 
 <ul>
-  <li>In [1], Chrome did not interpret the HTML tag &lt;h1&gt; because the server told it that it was sending a [text/plain] stream [2];
+  <li>In [1], Chrome did not interpret the HTML &lt;h1&gt; tag because the server told it that it was sending a [text/plain] [2] stream;
   </li>
 </ul>
 
@@ -1094,25 +1094,25 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 2: We send a [text/xml] stream;
+  <li>Line 2: We send a stream of type [text/xml];
   </li>
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000002230D3503BE.png" width="591" height="273" style="display:inline-block; margin:4px;width:15.637cm;height:7.235cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000002230D3503BE.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000049E000002230D3503BE.png" width="591" height="273" style="display:inline-block; margin:4px;width:15.637cm;height:7.235cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000002230D3503BE.png" /></td></tr></table>
 
 <ul>
-  <li>In [1], Chrome did not interpret the HTML tag &lt;h1&gt; because the server told it that it was sending a [text/xml] stream [2]. It then treated the &lt;h1&gt; tag as an XML tag;
+  <li>In [1], Chrome did not interpret the HTML &lt;h1&gt; tag because the server told it that it was sending a [text/xml] [2] stream. It then treated the &lt;h1&gt; tag as a XML tag;
   </li>
 </ul>
 
-<p>These examples highlight the importance of the [Content-Type] HTTP header in the server’s response. The browser uses this header to determine how to interpret the document it receives;</p>
-<p><a id="refheading1400891644545772"></a></p>
-<h2 id="37-a10-a11-a12-redirecting-the-client">3.7. <span style="color: #4f81bd">[/a10, /a11, /a12]: redirecting the client</span></h2>
+<p>These examples highlight the importance of the HTTP [Content-Type] header in the server’s response. The browser uses this header to determine how to interpret the document it receives;</p>
+<p><span id="refheading1400891644545772" name="refheading1400891644545772" class="odt-bookmark-anchor"></span></p>
+<h2 id="37-a10-a11-a12-redirect-the-client">3.7. <span style="color: #4f81bd">[/a10, /a11, /a12]: redirect the client</span></h2>
 <p>We create a new controller [RedirectController]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FA000000A233444B96.png" width="175" height="113" style="display:inline-block; margin:4px;width:4.63cm;height:3cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FA000000A233444B96.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000FA000000A233444B96.png" width="175" height="113" style="display:inline-block; margin:4px;width:4.63cm;height:3cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FA000000A233444B96.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>The code for [RedirectController] will be as follows for now:</p>
+<p>The code for [RedirectCntroller] will be as follows for now:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.springmvc.controllers;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1145,12 +1145,12 @@
 </ul>
 
 <p>Here is an example:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D20000034074932B02.png" width="617" height="416" style="display:inline-block; margin:4px;width:16.325cm;height:11.007cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000034074932B02.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004D20000034074932B02.png" width="617" height="416" style="display:inline-block; margin:4px;width:16.325cm;height:11.007cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000034074932B02.png" /></td></tr></table>
 
 <ul>
-  <li>In [2], we received the stream from action [/a01];
+  <li>in [2], we received the data stream from action [/a01];
   </li>
-  <li>in [3], the browser displays the URL of action [/a10];
+  <li>In [3], the browser displays URL from the [/a10] action;
   </li>
 </ul>
 
@@ -1164,22 +1164,22 @@
 </code></pre></div>
 
 <p>We get the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004590000024724B5497D.png" width="557" height="292" style="display:inline-block; margin:4px;width:14.725cm;height:7.713cm;" class="odt-zoomable" data-zoom-src="images/10000000000004590000024724B5497D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004590000024724B5497D.png" width="557" height="292" style="display:inline-block; margin:4px;width:14.725cm;height:7.713cm;" class="odt-zoomable" data-zoom-src="images/10000000000004590000024724B5497D.png" /></td></tr></table>
 
 <ul>
-  <li>In the Chrome logs [1-2], we see two requests, one to [/a11] and the other to [/a01];
+  <li>In the Chrome logs for [1-2], we see two requests: one to [/a11] and the other to [/a01];
   </li>
-  <li>in [3], the server responds with a [302] status code, which instructs the client browser to redirect to the URL specified by the HTTP [Location:] header [4]. The [302] status code is a temporary redirect code;
+  <li>in [3], the server responds with a [302] code that instructs the client browser to redirect toURL specified by the header HTTP [Location:] [4]. The code [302] is a temporary redirect code;
   </li>
 </ul>
 
-<p>The browser then makes the second request to the redirect URL:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C80000022512B4FA03.png" width="612" height="275" style="display:inline-block; margin:4px;width:16.193cm;height:7.264cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C80000022512B4FA03.png" /></td></tr></table>
+<p>The browser then sends the second request to the redirection server URL:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004C80000022512B4FA03.png" width="612" height="275" style="display:inline-block; margin:4px;width:16.193cm;height:7.264cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C80000022512B4FA03.png" /></td></tr></table>
 
 <ul>
-  <li>in [5], the client’s second request;
+  <li>to [5], the client’s second request;
   </li>
-  <li>in [6], the client browser displays the redirect request URL;
+  <li>to [6], the client browser displays the URL redirect request;
   </li>
 </ul>
 
@@ -1187,7 +1187,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>HTTP/1.1 301 Moved Permanently 
 </code></pre></div>
 <p>which means that the redirect is permanent. This difference between a temporary redirect (302) and a permanent redirect (301) is taken into account by some search engines.</p>
-<p>We write the action [/a12] that will perform this permanent redirect:</p>
+<p>We write the action [/a12], which will perform this permanent redirect:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ------------ permanent 301 redirect to a third-party action----------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#646464">@RequestMapping</span><span style="color:#000000">(value = </span><span style="color:#2a00ff">&quot;/a12&quot;</span><span style="color:#000000">, method = RequestMethod.</span><span style="font-weight:bold;font-style:italic;color:#0000c0">GET</span><span style="color:#000000">)</span></span></span>
@@ -1198,9 +1198,9 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 3: We ask Spring MVC to inject the [HttpServletResponse] object, which encapsulates the response sent to the client;
+  <li>line 3: Spring is asked to inject the MVC object, which encapsulates the response sent to the client;
   </li>
-  <li>line 4: we set the [status] of the response, the [301] HTTP header:
+  <li>line 4: we set the response&#x27;s [status], the header&#x27;s [301], and the HTTP:
   </li>
 </ul>
 
@@ -1213,22 +1213,21 @@
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Location: /a01 
 </code></pre></div>
-<p>which is the redirect URL.</p>
+<p>which is the URL redirect header.</p>
 <p>Execution yields the following results:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000162000001A442869D52.png" width="248" height="294" style="display:inline-block; margin:4px;width:6.549cm;height:7.77cm;" class="odt-zoomable" data-zoom-src="images/1000000000000162000001A442869D52.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014B0000008ED50DDD49.png" width="232" height="99" style="display:inline-block; margin:4px;width:6.13cm;height:2.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000014B0000008ED50DDD49.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000162000001A442869D52.png" width="248" height="294" style="display:inline-block; margin:4px;width:6.549cm;height:7.77cm;" class="odt-zoomable" data-zoom-src="images/1000000000000162000001A442869D52.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000014B0000008ED50DDD49.png" width="232" height="99" style="display:inline-block; margin:4px;width:6.13cm;height:2.63cm;" class="odt-zoomable" data-zoom-src="images/100000000000014B0000008ED50DDD49.png" /></td></tr></table>
 
-<p>From this example, we will learn how to:</p>
+<p>From this example, we will note how to:</p>
 <ul>
   <li>generate the HTTP response status;
   </li>
-  <li>include an HTTP header in the response;
+  <li>include a HTTP header in the response;
   </li>
 </ul>
-
-<p><a id="refheading1400911644545772"></a></p>
+<p><span id="refheading1400911644545772" name="refheading1400911644545772" class="odt-bookmark-anchor"></span></p>
 <h2 id="38-a13-generate-the-complete-response">3.8. <span style="color: #4f81bd">[/a13]: generate the complete response</span></h2>
-<p>It is possible to fully control the response, as shown by the following action in the [ResponsesController] class:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F7000000A4D658B54C.png" width="173" height="115" style="display:inline-block; margin:4px;width:4.57cm;height:3.034cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F7000000A4D658B54C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p>It is possible to fully control the response, as shown by the following action of the [ResponsesController] class:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000F7000000A4D658B54C.png" width="173" height="115" style="display:inline-block; margin:4px;width:4.57cm;height:3.034cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F7000000A4D658B54C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// ----------------------- complete response generation ------------------------</span></span></span>
@@ -1243,35 +1242,35 @@
 </code></pre></div>
 
 <ul>
-  <li>Line 3: The result of the action is [void]. In this case, to send a non-empty response to the client, you must use the [<span style="color: #000000">HttpServletResponse </span><span style="color: #6a3e3e">response</span>] object provided by Spring MVC;
+  <li>line 3: the result of the action is [void]. In this case, to send a non-empty response to the client, you must use the [HttpServletResponse response] object provided by Spring MVC;
   </li>
-  <li>line 4: we assign a status to the response that will not be recognized by the client;
+  <li>line 4: we give the response a status that will not be recognized by the client;
   </li>
-  <li>line 5: we add an HTTP header that will not be recognized by the client;
+  <li>line 5: we add a header HTTP that will not be recognized by the client;
   </li>
-  <li>line 6: we add an HTTP header [Content-Type] to specify the type of data we are sending, in this case HTML;
+  <li>line 6:  add a header HTTP [Content-Type] to specify the type of stream to be sent, in this case HTML;
   </li>
-  <li>Lines 7–8: The document that follows the HTTP headers in the response;
+  <li>Lines 7–8: The document that will follow the HTTP headers in the response;
   </li>
 </ul>
 
 <p>The results are as follows:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DF0000035F6CF10D07.png" width="624" height="432" style="display:inline-block; margin:4px;width:16.498cm;height:11.418cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DF0000035F6CF10D07.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004DF0000035F6CF10D07.png" width="624" height="432" style="display:inline-block; margin:4px;width:16.498cm;height:11.418cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DF0000035F6CF10D07.png" /></td></tr></table>
 
 <ul>
   <li>in [1], we recognize the elements of our response;
   </li>
   <li>in [2-3], we see that Chrome ignored the fact that:
     <ul>
-      <li>the HTTP status of the response was not a recognized HTTP status,
+      <li>the response status HTTP was not a recognized HTTP status,
       </li>
-      <li>that the header [header1] was not a recognized HTTP header;
+      <li>the [header1] header was not a recognized HTTP header;
       </li>
     </ul>
   </li>
 </ul>
 
-<p>If the client is not a browser but a programmatic client, you are free to use whatever status codes and headers you want.</p>
+<p>If the client is not a browser but a programmed client, you are free to use whatever status codes and headers you want.</p>
 
 
 
